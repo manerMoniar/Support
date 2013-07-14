@@ -1,0 +1,1226 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="2450" measuredH="549" mockupW="2382" mockupH="518">
+  <controls>
+    <control controlID="67" controlTypeID="com.balsamiq.mockups::Icon" x="1060" y="413" w="-1" h="-1" measuredW="32" measuredH="32" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>16777215</color>
+        <icon>BulletsIcon%7Cmedium</icon>
+      </controlProperties>
+    </control>
+    <control controlID="68" controlTypeID="com.balsamiq.mockups::Icon" x="1174" y="413" w="-1" h="-1" measuredW="32" measuredH="32" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>16777215</color>
+        <icon>GearIcon%7Cmedium</icon>
+      </controlProperties>
+    </control>
+    <control controlID="69" controlTypeID="com.balsamiq.mockups::Icon" x="1120" y="413" w="-1" h="-1" measuredW="32" measuredH="32" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>16777215</color>
+        <icon>ContactIcon%7Cmedium</icon>
+      </controlProperties>
+    </control>
+    <control controlID="286" controlTypeID="__group__" x="68" y="31" w="282" h="510" measuredW="282" measuredH="510" zOrder="0" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::iPhone" x="0" y="0" w="-1" h="-1" measuredW="282" measuredH="510" zOrder="0" locked="false" isInGroup="286"/>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Label" x="36" y="179" w="211" h="82" measuredW="305" measuredH="41" zOrder="1" locked="false" isInGroup="286">
+          <controlProperties>
+            <align>center</align>
+            <bold>true</bold>
+            <size>32</size>
+            <text>LOGO%20APLICACI%D3N</text>
+          </controlProperties>
+        </control>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::Icon" x="117" y="290" w="-1" h="-1" measuredW="48" measuredH="48" zOrder="2" locked="false" isInGroup="286">
+          <controlProperties>
+            <icon>SpinningIcon%7Clarge</icon>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="425" controlTypeID="__group__" x="495" y="39" w="282" h="510" measuredW="282" measuredH="510" zOrder="4" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::iPhone" x="0" y="0" w="-1" h="-1" measuredW="282" measuredH="510" zOrder="0" locked="false" isInGroup="425"/>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Icon" x="114" y="242" w="-1" h="-1" measuredW="48" measuredH="48" zOrder="1" locked="false" isInGroup="425">
+          <controlProperties>
+            <icon>SpinningIcon%7Clarge</icon>
+          </controlProperties>
+        </control>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::Label" x="84" y="192" w="-1" h="-1" measuredW="108" measuredH="28" zOrder="2" locked="false" isInGroup="425">
+          <controlProperties>
+            <bold>true</bold>
+            <size>20</size>
+            <text>Cargando...</text>
+          </controlProperties>
+        </control>
+        <control controlID="3" controlTypeID="__group__" x="26" y="379" w="228" h="48" measuredW="228" measuredH="48" zOrder="3" locked="false" isInGroup="425">
+          <groupChildrenDescriptors>
+            <control controlID="0" controlTypeID="com.balsamiq.mockups::RoundButton" x="170" y="0" w="58" h="48" measuredW="32" measuredH="32" zOrder="0" locked="false" isInGroup="3">
+              <controlProperties>
+                <color>3355443</color>
+                <shape>rectangle</shape>
+                <text/>
+              </controlProperties>
+            </control>
+            <control controlID="1" controlTypeID="com.balsamiq.mockups::RoundButton" x="56" y="0" w="58" h="48" measuredW="32" measuredH="32" zOrder="1" locked="false" isInGroup="3">
+              <controlProperties>
+                <borderColor>0</borderColor>
+                <color>3355443</color>
+                <shape>rectangle</shape>
+                <text/>
+              </controlProperties>
+            </control>
+            <control controlID="2" controlTypeID="com.balsamiq.mockups::RoundButton" x="112" y="0" w="64" h="48" measuredW="32" measuredH="32" zOrder="2" locked="false" isInGroup="3">
+              <controlProperties>
+                <borderColor>0</borderColor>
+                <color>3355443</color>
+                <shape>rectangle</shape>
+                <text/>
+              </controlProperties>
+            </control>
+            <control controlID="3" controlTypeID="com.balsamiq.mockups::RoundButton" x="0" y="0" w="58" h="48" measuredW="32" measuredH="32" zOrder="3" locked="false" isInGroup="3">
+              <controlProperties>
+                <borderColor>0</borderColor>
+                <color>3355443</color>
+                <shape>rectangle</shape>
+                <text/>
+              </controlProperties>
+            </control>
+            <control controlID="4" controlTypeID="com.balsamiq.mockups::Icon" x="13" y="8" w="-1" h="-1" measuredW="32" measuredH="32" zOrder="4" locked="false" isInGroup="3">
+              <controlProperties>
+                <color>2848996</color>
+                <icon>HomeIcon%7Cmedium</icon>
+              </controlProperties>
+            </control>
+            <control controlID="5" controlTypeID="com.balsamiq.mockups::Icon" x="69" y="8" w="-1" h="-1" measuredW="32" measuredH="32" zOrder="5" locked="false" isInGroup="3">
+              <controlProperties>
+                <color>16777215</color>
+                <icon>BulletsIcon%7Cmedium</icon>
+              </controlProperties>
+            </control>
+            <control controlID="6" controlTypeID="com.balsamiq.mockups::Icon" x="183" y="8" w="-1" h="-1" measuredW="32" measuredH="32" zOrder="6" locked="false" isInGroup="3">
+              <controlProperties>
+                <color>16777215</color>
+                <icon>GearIcon%7Cmedium</icon>
+              </controlProperties>
+            </control>
+            <control controlID="7" controlTypeID="com.balsamiq.mockups::Icon" x="129" y="8" w="-1" h="-1" measuredW="32" measuredH="32" zOrder="7" locked="false" isInGroup="3">
+              <controlProperties>
+                <color>16777215</color>
+                <icon>ContactIcon%7Cmedium</icon>
+              </controlProperties>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="440" controlTypeID="com.balsamiq.mockups::Arrow" x="302" y="172" w="224" h="140" measuredW="150" measuredH="100" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <backgroundAlpha>0.75</backgroundAlpha>
+        <color>13369344</color>
+        <direction>bottom</direction>
+        <leftArrow>false</leftArrow>
+        <rightArrow>true</rightArrow>
+      </controlProperties>
+    </control>
+    <control controlID="441" controlTypeID="com.balsamiq.mockups::Arrow" x="737" y="169" w="224" h="140" measuredW="150" measuredH="100" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <backgroundAlpha>0.75</backgroundAlpha>
+        <color>13369344</color>
+        <direction>bottom</direction>
+        <leftArrow>false</leftArrow>
+        <rightArrow>true</rightArrow>
+      </controlProperties>
+    </control>
+    <control controlID="522" controlTypeID="__group__" x="935" y="31" w="282" h="510" measuredW="282" measuredH="510" zOrder="6" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="__group__" x="0" y="0" w="282" h="510" measuredW="282" measuredH="510" zOrder="0" locked="false" isInGroup="522">
+          <groupChildrenDescriptors>
+            <control controlID="0" controlTypeID="__group__" x="0" y="0" w="282" h="510" measuredW="282" measuredH="510" zOrder="0" locked="false" isInGroup="0">
+              <groupChildrenDescriptors>
+                <control controlID="0" controlTypeID="com.balsamiq.mockups::iPhone" x="0" y="0" w="-1" h="-1" measuredW="282" measuredH="510" zOrder="0" locked="false" isInGroup="0"/>
+              </groupChildrenDescriptors>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+        <control controlID="1" controlTypeID="__group__" x="26" y="379" w="228" h="48" measuredW="228" measuredH="48" zOrder="1" locked="false" isInGroup="522">
+          <groupChildrenDescriptors>
+            <control controlID="0" controlTypeID="com.balsamiq.mockups::RoundButton" x="170" y="0" w="58" h="48" measuredW="32" measuredH="32" zOrder="0" locked="false" isInGroup="1">
+              <controlProperties>
+                <color>3355443</color>
+                <shape>rectangle</shape>
+                <text/>
+              </controlProperties>
+            </control>
+            <control controlID="1" controlTypeID="com.balsamiq.mockups::RoundButton" x="56" y="0" w="58" h="48" measuredW="32" measuredH="32" zOrder="1" locked="false" isInGroup="1">
+              <controlProperties>
+                <borderColor>0</borderColor>
+                <color>3355443</color>
+                <shape>rectangle</shape>
+                <text/>
+              </controlProperties>
+            </control>
+            <control controlID="2" controlTypeID="com.balsamiq.mockups::RoundButton" x="112" y="0" w="64" h="48" measuredW="32" measuredH="32" zOrder="2" locked="false" isInGroup="1">
+              <controlProperties>
+                <borderColor>0</borderColor>
+                <color>3355443</color>
+                <shape>rectangle</shape>
+                <text/>
+              </controlProperties>
+            </control>
+            <control controlID="3" controlTypeID="com.balsamiq.mockups::RoundButton" x="0" y="0" w="58" h="48" measuredW="32" measuredH="32" zOrder="3" locked="false" isInGroup="1">
+              <controlProperties>
+                <borderColor>0</borderColor>
+                <color>3355443</color>
+                <shape>rectangle</shape>
+                <text/>
+              </controlProperties>
+            </control>
+            <control controlID="4" controlTypeID="com.balsamiq.mockups::Icon" x="13" y="8" w="-1" h="-1" measuredW="32" measuredH="32" zOrder="4" locked="false" isInGroup="1">
+              <controlProperties>
+                <color>2848996</color>
+                <icon>HomeIcon%7Cmedium</icon>
+              </controlProperties>
+            </control>
+            <control controlID="5" controlTypeID="com.balsamiq.mockups::Icon" x="69" y="8" w="-1" h="-1" measuredW="32" measuredH="32" zOrder="5" locked="false" isInGroup="1">
+              <controlProperties>
+                <color>16777215</color>
+                <icon>BulletsIcon%7Cmedium</icon>
+              </controlProperties>
+            </control>
+            <control controlID="6" controlTypeID="com.balsamiq.mockups::Icon" x="183" y="8" w="-1" h="-1" measuredW="32" measuredH="32" zOrder="6" locked="false" isInGroup="1">
+              <controlProperties>
+                <color>16777215</color>
+                <icon>GearIcon%7Cmedium</icon>
+              </controlProperties>
+            </control>
+            <control controlID="7" controlTypeID="com.balsamiq.mockups::Icon" x="129" y="8" w="-1" h="-1" measuredW="32" measuredH="32" zOrder="7" locked="false" isInGroup="1">
+              <controlProperties>
+                <color>16777215</color>
+                <icon>ContactIcon%7Cmedium</icon>
+              </controlProperties>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+        <control controlID="2" controlTypeID="__group__" x="29" y="100" w="221" h="31" measuredW="221" measuredH="31" zOrder="2" locked="false" isInGroup="522">
+          <groupChildrenDescriptors>
+            <control controlID="0" controlTypeID="com.balsamiq.mockups::HRule" x="0" y="21" w="221" h="-1" measuredW="100" measuredH="10" zOrder="0" locked="false" isInGroup="2">
+              <controlProperties>
+                <color>6710886</color>
+              </controlProperties>
+            </control>
+            <control controlID="1" controlTypeID="com.balsamiq.mockups::Label" x="39" y="2" w="-1" h="-1" measuredW="110" measuredH="21" zOrder="1" locked="false" isInGroup="2">
+              <controlProperties>
+                <text>Nombre%20de%20la%20App</text>
+              </controlProperties>
+            </control>
+            <control controlID="2" controlTypeID="com.balsamiq.mockups::Icon" x="10" y="0" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="2" locked="false" isInGroup="2">
+              <controlProperties>
+                <icon>StumbleUponIcon%7Csmall</icon>
+              </controlProperties>
+            </control>
+            <control controlID="3" controlTypeID="com.balsamiq.mockups::Icon" x="184" y="0" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="3" locked="false" isInGroup="2">
+              <controlProperties>
+                <icon>SearchIcon%7Csmall</icon>
+              </controlProperties>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+        <control controlID="3" controlTypeID="__group__" x="36" y="148" w="207" h="216" measuredW="207" measuredH="216" zOrder="3" locked="false" isInGroup="522">
+          <groupChildrenDescriptors>
+            <control controlID="0" controlTypeID="__group__" x="1" y="0" w="206" h="66" measuredW="206" measuredH="66" zOrder="0" locked="false" isInGroup="3">
+              <groupChildrenDescriptors>
+                <control controlID="0" controlTypeID="com.balsamiq.mockups::Canvas" x="0" y="0" w="206" h="66" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="0"/>
+                <control controlID="1" controlTypeID="com.balsamiq.mockups::Icon" x="4" y="9" w="-1" h="-1" measuredW="48" measuredH="48" zOrder="1" locked="false" isInGroup="0">
+                  <controlProperties>
+                    <icon>ContactIcon%7Clarge</icon>
+                  </controlProperties>
+                </control>
+                <control controlID="2" controlTypeID="com.balsamiq.mockups::Label" x="58" y="7" w="137" h="38" measuredW="234" measuredH="21" zOrder="2" locked="false" isInGroup="0">
+                  <controlProperties>
+                    <text>Nombre%2C%20Ubicaci%F3n%20e%20Informaci%F3n%20b%E1sica</text>
+                  </controlProperties>
+                </control>
+                <control controlID="3" controlTypeID="__group__" x="59" y="46" w="86" h="16" measuredW="86" measuredH="16" zOrder="3" locked="false" isInGroup="0">
+                  <groupChildrenDescriptors>
+                    <control controlID="0" controlTypeID="com.balsamiq.mockups::Icon" x="0" y="0" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="0" locked="false" isInGroup="3">
+                      <controlProperties>
+                        <borderStyle>none</borderStyle>
+                        <color>15843890</color>
+                        <icon>StarIcon%7Cxsmall</icon>
+                      </controlProperties>
+                    </control>
+                    <control controlID="1" controlTypeID="com.balsamiq.mockups::Icon" x="70" y="0" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="1" locked="false" isInGroup="3">
+                      <controlProperties>
+                        <color>0</color>
+                        <icon>StarIcon%7Cxsmall</icon>
+                      </controlProperties>
+                    </control>
+                    <control controlID="2" controlTypeID="com.balsamiq.mockups::Icon" x="18" y="0" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="2" locked="false" isInGroup="3">
+                      <controlProperties>
+                        <borderStyle>none</borderStyle>
+                        <color>15843890</color>
+                        <icon>StarIcon%7Cxsmall</icon>
+                      </controlProperties>
+                    </control>
+                    <control controlID="3" controlTypeID="com.balsamiq.mockups::Icon" x="36" y="0" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="3" locked="false" isInGroup="3">
+                      <controlProperties>
+                        <borderStyle>none</borderStyle>
+                        <color>15843890</color>
+                        <icon>StarIcon%7Cxsmall</icon>
+                      </controlProperties>
+                    </control>
+                    <control controlID="4" controlTypeID="com.balsamiq.mockups::Icon" x="52" y="0" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="4" locked="false" isInGroup="3">
+                      <controlProperties>
+                        <borderStyle>none</borderStyle>
+                        <color>15843890</color>
+                        <icon>StarIcon%7Cxsmall</icon>
+                      </controlProperties>
+                    </control>
+                  </groupChildrenDescriptors>
+                </control>
+                <control controlID="4" controlTypeID="com.balsamiq.mockups::Label" x="154" y="45" w="40" h="14" measuredW="38" measuredH="18" zOrder="4" locked="false" isInGroup="0">
+                  <controlProperties>
+                    <size>11</size>
+                    <text>%282016%29</text>
+                  </controlProperties>
+                </control>
+              </groupChildrenDescriptors>
+            </control>
+            <control controlID="1" controlTypeID="__group__" x="1" y="74" w="206" h="66" measuredW="206" measuredH="66" zOrder="1" locked="false" isInGroup="3">
+              <groupChildrenDescriptors>
+                <control controlID="0" controlTypeID="com.balsamiq.mockups::Canvas" x="0" y="0" w="206" h="66" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="1"/>
+                <control controlID="1" controlTypeID="com.balsamiq.mockups::Icon" x="4" y="9" w="-1" h="-1" measuredW="48" measuredH="48" zOrder="1" locked="false" isInGroup="1">
+                  <controlProperties>
+                    <icon>ContactIcon%7Clarge</icon>
+                  </controlProperties>
+                </control>
+                <control controlID="2" controlTypeID="com.balsamiq.mockups::Label" x="58" y="7" w="137" h="38" measuredW="234" measuredH="21" zOrder="2" locked="false" isInGroup="1">
+                  <controlProperties>
+                    <text>Nombre%2C%20Ubicaci%F3n%20e%20Informaci%F3n%20b%E1sica</text>
+                  </controlProperties>
+                </control>
+                <control controlID="3" controlTypeID="__group__" x="61" y="46" w="86" h="16" measuredW="86" measuredH="16" zOrder="3" locked="false" isInGroup="1">
+                  <groupChildrenDescriptors>
+                    <control controlID="0" controlTypeID="com.balsamiq.mockups::Icon" x="0" y="0" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="0" locked="false" isInGroup="3">
+                      <controlProperties>
+                        <borderStyle>none</borderStyle>
+                        <color>15843890</color>
+                        <icon>StarIcon%7Cxsmall</icon>
+                      </controlProperties>
+                    </control>
+                    <control controlID="1" controlTypeID="com.balsamiq.mockups::Icon" x="18" y="0" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="1" locked="false" isInGroup="3">
+                      <controlProperties>
+                        <borderStyle>none</borderStyle>
+                        <color>15843890</color>
+                        <icon>StarIcon%7Cxsmall</icon>
+                      </controlProperties>
+                    </control>
+                    <control controlID="2" controlTypeID="com.balsamiq.mockups::Icon" x="36" y="0" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="2" locked="false" isInGroup="3">
+                      <controlProperties>
+                        <borderStyle>none</borderStyle>
+                        <color>15843890</color>
+                        <icon>StarIcon%7Cxsmall</icon>
+                      </controlProperties>
+                    </control>
+                    <control controlID="3" controlTypeID="com.balsamiq.mockups::Icon" x="52" y="0" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="3" locked="false" isInGroup="3">
+                      <controlProperties>
+                        <borderStyle>none</borderStyle>
+                        <color>15843890</color>
+                        <icon>StarIcon%7Cxsmall</icon>
+                      </controlProperties>
+                    </control>
+                    <control controlID="4" controlTypeID="com.balsamiq.mockups::Icon" x="70" y="0" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="4" locked="false" isInGroup="3">
+                      <controlProperties>
+                        <borderStyle>none</borderStyle>
+                        <color>15843890</color>
+                        <icon>StarIcon%7Cxsmall</icon>
+                      </controlProperties>
+                    </control>
+                  </groupChildrenDescriptors>
+                </control>
+                <control controlID="4" controlTypeID="com.balsamiq.mockups::Label" x="156" y="46" w="38" h="17" measuredW="39" measuredH="18" zOrder="4" locked="false" isInGroup="1">
+                  <controlProperties>
+                    <size>11</size>
+                    <text>%281587%29</text>
+                  </controlProperties>
+                </control>
+              </groupChildrenDescriptors>
+            </control>
+            <control controlID="2" controlTypeID="__group__" x="0" y="150" w="206" h="66" measuredW="206" measuredH="66" zOrder="2" locked="false" isInGroup="3">
+              <groupChildrenDescriptors>
+                <control controlID="0" controlTypeID="com.balsamiq.mockups::Canvas" x="0" y="0" w="206" h="66" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="2"/>
+                <control controlID="1" controlTypeID="com.balsamiq.mockups::Icon" x="4" y="9" w="-1" h="-1" measuredW="48" measuredH="48" zOrder="1" locked="false" isInGroup="2">
+                  <controlProperties>
+                    <icon>ContactIcon%7Clarge</icon>
+                  </controlProperties>
+                </control>
+                <control controlID="2" controlTypeID="com.balsamiq.mockups::Label" x="58" y="7" w="137" h="38" measuredW="234" measuredH="21" zOrder="2" locked="false" isInGroup="2">
+                  <controlProperties>
+                    <text>Nombre%2C%20Ubicaci%F3n%20e%20Informaci%F3n%20b%E1sica</text>
+                  </controlProperties>
+                </control>
+                <control controlID="3" controlTypeID="__group__" x="59" y="46" w="86" h="16" measuredW="86" measuredH="16" zOrder="3" locked="false" isInGroup="2">
+                  <groupChildrenDescriptors>
+                    <control controlID="0" controlTypeID="com.balsamiq.mockups::Icon" x="0" y="0" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="0" locked="false" isInGroup="3">
+                      <controlProperties>
+                        <borderStyle>none</borderStyle>
+                        <color>15843890</color>
+                        <icon>StarIcon%7Cxsmall</icon>
+                      </controlProperties>
+                    </control>
+                    <control controlID="1" controlTypeID="com.balsamiq.mockups::Icon" x="70" y="0" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="1" locked="false" isInGroup="3">
+                      <controlProperties>
+                        <color>0</color>
+                        <icon>StarIcon%7Cxsmall</icon>
+                      </controlProperties>
+                    </control>
+                    <control controlID="2" controlTypeID="com.balsamiq.mockups::Icon" x="18" y="0" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="2" locked="false" isInGroup="3">
+                      <controlProperties>
+                        <borderStyle>none</borderStyle>
+                        <color>15843890</color>
+                        <icon>StarIcon%7Cxsmall</icon>
+                      </controlProperties>
+                    </control>
+                    <control controlID="3" controlTypeID="com.balsamiq.mockups::Icon" x="36" y="0" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="3" locked="false" isInGroup="3">
+                      <controlProperties>
+                        <borderStyle>none</borderStyle>
+                        <color>15843890</color>
+                        <icon>StarIcon%7Cxsmall</icon>
+                      </controlProperties>
+                    </control>
+                    <control controlID="4" controlTypeID="com.balsamiq.mockups::Icon" x="54" y="0" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="4" locked="false" isInGroup="3">
+                      <controlProperties>
+                        <color>0</color>
+                        <icon>StarIcon%7Cxsmall</icon>
+                      </controlProperties>
+                    </control>
+                  </groupChildrenDescriptors>
+                </control>
+                <control controlID="4" controlTypeID="com.balsamiq.mockups::Label" x="159" y="46" w="31" h="17" measuredW="33" measuredH="18" zOrder="4" locked="false" isInGroup="2">
+                  <controlProperties>
+                    <size>11</size>
+                    <text>%28184%29</text>
+                  </controlProperties>
+                </control>
+              </groupChildrenDescriptors>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="634" controlTypeID="__group__" x="1373" y="31" w="282" h="510" measuredW="282" measuredH="510" zOrder="7" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="__group__" x="0" y="0" w="282" h="510" measuredW="282" measuredH="510" zOrder="0" locked="false" isInGroup="634">
+          <groupChildrenDescriptors>
+            <control controlID="0" controlTypeID="__group__" x="0" y="0" w="282" h="510" measuredW="282" measuredH="510" zOrder="0" locked="false" isInGroup="0">
+              <groupChildrenDescriptors>
+                <control controlID="0" controlTypeID="com.balsamiq.mockups::iPhone" x="0" y="0" w="-1" h="-1" measuredW="282" measuredH="510" zOrder="0" locked="false" isInGroup="0"/>
+              </groupChildrenDescriptors>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+        <control controlID="1" controlTypeID="__group__" x="26" y="379" w="228" h="48" measuredW="228" measuredH="48" zOrder="1" locked="false" isInGroup="634">
+          <groupChildrenDescriptors>
+            <control controlID="0" controlTypeID="com.balsamiq.mockups::RoundButton" x="170" y="0" w="58" h="48" measuredW="32" measuredH="32" zOrder="0" locked="false" isInGroup="1">
+              <controlProperties>
+                <color>3355443</color>
+                <shape>rectangle</shape>
+                <text/>
+              </controlProperties>
+            </control>
+            <control controlID="1" controlTypeID="com.balsamiq.mockups::RoundButton" x="56" y="0" w="58" h="48" measuredW="32" measuredH="32" zOrder="1" locked="false" isInGroup="1">
+              <controlProperties>
+                <borderColor>0</borderColor>
+                <color>3355443</color>
+                <shape>rectangle</shape>
+                <text/>
+              </controlProperties>
+            </control>
+            <control controlID="2" controlTypeID="com.balsamiq.mockups::RoundButton" x="112" y="0" w="64" h="48" measuredW="32" measuredH="32" zOrder="2" locked="false" isInGroup="1">
+              <controlProperties>
+                <borderColor>0</borderColor>
+                <color>3355443</color>
+                <shape>rectangle</shape>
+                <text/>
+              </controlProperties>
+            </control>
+            <control controlID="3" controlTypeID="com.balsamiq.mockups::RoundButton" x="0" y="0" w="58" h="48" measuredW="32" measuredH="32" zOrder="3" locked="false" isInGroup="1">
+              <controlProperties>
+                <borderColor>0</borderColor>
+                <color>3355443</color>
+                <shape>rectangle</shape>
+                <text/>
+              </controlProperties>
+            </control>
+            <control controlID="4" controlTypeID="com.balsamiq.mockups::Icon" x="13" y="8" w="-1" h="-1" measuredW="32" measuredH="32" zOrder="4" locked="false" isInGroup="1">
+              <controlProperties>
+                <color>2848996</color>
+                <icon>HomeIcon%7Cmedium</icon>
+              </controlProperties>
+            </control>
+            <control controlID="5" controlTypeID="com.balsamiq.mockups::Icon" x="69" y="8" w="-1" h="-1" measuredW="32" measuredH="32" zOrder="5" locked="false" isInGroup="1">
+              <controlProperties>
+                <color>16777215</color>
+                <icon>BulletsIcon%7Cmedium</icon>
+              </controlProperties>
+            </control>
+            <control controlID="6" controlTypeID="com.balsamiq.mockups::Icon" x="183" y="8" w="-1" h="-1" measuredW="32" measuredH="32" zOrder="6" locked="false" isInGroup="1">
+              <controlProperties>
+                <color>16777215</color>
+                <icon>GearIcon%7Cmedium</icon>
+              </controlProperties>
+            </control>
+            <control controlID="7" controlTypeID="com.balsamiq.mockups::Icon" x="129" y="8" w="-1" h="-1" measuredW="32" measuredH="32" zOrder="7" locked="false" isInGroup="1">
+              <controlProperties>
+                <color>16777215</color>
+                <icon>ContactIcon%7Cmedium</icon>
+              </controlProperties>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::Webcam" x="38" y="146" w="80" h="83" measuredW="177" measuredH="146" zOrder="2" locked="false" isInGroup="634"/>
+        <control controlID="3" controlTypeID="__group__" x="126" y="207" w="123" h="18" measuredW="123" measuredH="18" zOrder="3" locked="false" isInGroup="634">
+          <groupChildrenDescriptors>
+            <control controlID="0" controlTypeID="__group__" x="0" y="1" w="80" h="16" measuredW="80" measuredH="16" zOrder="0" locked="false" isInGroup="3">
+              <groupChildrenDescriptors>
+                <control controlID="0" controlTypeID="com.balsamiq.mockups::Icon" x="0" y="0" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="0" locked="false" isInGroup="0">
+                  <controlProperties>
+                    <color>15843890</color>
+                    <icon>StarIcon%7Cxsmall</icon>
+                  </controlProperties>
+                </control>
+                <control controlID="1" controlTypeID="com.balsamiq.mockups::Icon" x="16" y="0" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="1" locked="false" isInGroup="0">
+                  <controlProperties>
+                    <color>15843890</color>
+                    <icon>StarIcon%7Cxsmall</icon>
+                  </controlProperties>
+                </control>
+                <control controlID="2" controlTypeID="com.balsamiq.mockups::Icon" x="32" y="0" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="2" locked="false" isInGroup="0">
+                  <controlProperties>
+                    <color>15843890</color>
+                    <icon>StarIcon%7Cxsmall</icon>
+                  </controlProperties>
+                </control>
+                <control controlID="3" controlTypeID="com.balsamiq.mockups::Icon" x="48" y="0" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="3" locked="false" isInGroup="0">
+                  <controlProperties>
+                    <color>15843890</color>
+                    <icon>StarIcon%7Cxsmall</icon>
+                  </controlProperties>
+                </control>
+                <control controlID="4" controlTypeID="com.balsamiq.mockups::Icon" x="64" y="0" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="4" locked="false" isInGroup="0">
+                  <controlProperties>
+                    <icon>StarIcon%7Cxsmall</icon>
+                  </controlProperties>
+                </control>
+              </groupChildrenDescriptors>
+            </control>
+            <control controlID="1" controlTypeID="com.balsamiq.mockups::Label" x="84" y="0" w="-1" h="-1" measuredW="39" measuredH="18" zOrder="1" locked="false" isInGroup="3">
+              <controlProperties>
+                <size>11</size>
+                <text>%281237%29</text>
+              </controlProperties>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+        <control controlID="4" controlTypeID="__group__" x="128" y="146" w="111" h="57" measuredW="111" measuredH="57" zOrder="4" locked="false" isInGroup="634">
+          <groupChildrenDescriptors>
+            <control controlID="0" controlTypeID="com.balsamiq.mockups::Label" x="0" y="0" w="-1" h="-1" measuredW="67" measuredH="21" zOrder="0" locked="false" isInGroup="4">
+              <controlProperties>
+                <bold>true</bold>
+                <text>Wolf%20D1az</text>
+              </controlProperties>
+            </control>
+            <control controlID="1" controlTypeID="com.balsamiq.mockups::Label" x="0" y="21" w="-1" h="-1" measuredW="111" measuredH="18" zOrder="1" locked="false" isInGroup="4">
+              <controlProperties>
+                <size>11</size>
+                <text>wolfd1azs@gmail.com</text>
+              </controlProperties>
+            </control>
+            <control controlID="2" controlTypeID="com.balsamiq.mockups::Label" x="0" y="39" w="-1" h="-1" measuredW="83" measuredH="18" zOrder="2" locked="false" isInGroup="4">
+              <controlProperties>
+                <size>11</size>
+                <text>492%20125%2045%2089</text>
+              </controlProperties>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+        <control controlID="5" controlTypeID="com.balsamiq.mockups::ButtonBar" x="34" y="241" w="209" h="29" measuredW="188" measuredH="29" zOrder="5" locked="false" isInGroup="634">
+          <controlProperties>
+            <text>%20Informaci%F3n%2C%20Ubicaci%F3n</text>
+          </controlProperties>
+        </control>
+        <control controlID="6" controlTypeID="com.balsamiq.mockups::Paragraph" x="38" y="285" w="200" h="52" measuredW="200" measuredH="80" zOrder="6" locked="false" isInGroup="634">
+          <controlProperties>
+            <text>Reparaci%F3n%20de%20computadoras%20%0AReparaci%F3n%20de%20impresoras%20%0AReparaci%F3n%20de%20celulares</text>
+          </controlProperties>
+        </control>
+        <control controlID="7" controlTypeID="__group__" x="29" y="100" w="221" h="31" measuredW="221" measuredH="31" zOrder="7" locked="false" isInGroup="634">
+          <groupChildrenDescriptors>
+            <control controlID="0" controlTypeID="com.balsamiq.mockups::HRule" x="0" y="21" w="221" h="-1" measuredW="100" measuredH="10" zOrder="0" locked="false" isInGroup="7">
+              <controlProperties>
+                <color>6710886</color>
+              </controlProperties>
+            </control>
+            <control controlID="1" controlTypeID="com.balsamiq.mockups::Label" x="39" y="2" w="-1" h="-1" measuredW="35" measuredH="21" zOrder="1" locked="false" isInGroup="7">
+              <controlProperties>
+                <text>Perfil</text>
+              </controlProperties>
+            </control>
+            <control controlID="2" controlTypeID="com.balsamiq.mockups::Icon" x="10" y="0" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="2" locked="false" isInGroup="7">
+              <controlProperties>
+                <icon>StumbleUponIcon%7Csmall</icon>
+              </controlProperties>
+            </control>
+            <control controlID="3" controlTypeID="com.balsamiq.mockups::Icon" x="190" y="1" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="3" locked="false" isInGroup="7">
+              <controlProperties>
+                <icon>AddCommentIcon%7Csmall</icon>
+              </controlProperties>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="639" controlTypeID="com.balsamiq.mockups::RoundButton" x="1152" y="345" w="30" h="30" measuredW="32" measuredH="32" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <backgroundAlpha>0.75</backgroundAlpha>
+        <borderColor>13369344</borderColor>
+        <color>13369344</color>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="640" controlTypeID="com.balsamiq.mockups::Arrow" x="1173" y="172" w="230" h="179" measuredW="150" measuredH="100" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <backgroundAlpha>0.75</backgroundAlpha>
+        <color>13369344</color>
+        <direction>bottom</direction>
+        <leftArrow>false</leftArrow>
+        <rightArrow>true</rightArrow>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="642" controlTypeID="com.balsamiq.mockups::RoundButton" x="1605" y="142" w="24" h="23" measuredW="32" measuredH="32" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <backgroundAlpha>0.75</backgroundAlpha>
+        <borderColor>13369344</borderColor>
+        <color>13369344</color>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="643" controlTypeID="com.balsamiq.mockups::Arrow" x="1629" y="150" w="197" h="43" measuredW="150" measuredH="100" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <backgroundAlpha>0.75</backgroundAlpha>
+        <color>13369344</color>
+        <direction>top</direction>
+        <leftArrow>false</leftArrow>
+        <rightArrow>true</rightArrow>
+      </controlProperties>
+    </control>
+    <control controlID="644" controlTypeID="com.balsamiq.mockups::RoundButton" x="1600" y="237" w="24" h="23" measuredW="32" measuredH="32" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <backgroundAlpha>0.75</backgroundAlpha>
+        <borderColor>13369344</borderColor>
+        <color>13369344</color>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="645" controlTypeID="com.balsamiq.mockups::Arrow" x="1621" y="219" w="205" h="33" measuredW="150" measuredH="100" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <backgroundAlpha>0.75</backgroundAlpha>
+        <color>13369344</color>
+        <direction>bottom</direction>
+        <leftArrow>false</leftArrow>
+        <rightArrow>true</rightArrow>
+      </controlProperties>
+    </control>
+    <control controlID="663" controlTypeID="com.balsamiq.mockups::Arrow" x="2041" y="303" w="162" h="95" measuredW="150" measuredH="100" zOrder="17" locked="false" isInGroup="-1">
+      <controlProperties>
+        <backgroundAlpha>0.75</backgroundAlpha>
+        <color>13369344</color>
+        <direction>bottom</direction>
+        <leftArrow>false</leftArrow>
+        <rightArrow>true</rightArrow>
+      </controlProperties>
+    </control>
+    <control controlID="676" controlTypeID="__group__" x="2168" y="39" w="282" h="510" measuredW="282" measuredH="510" zOrder="15" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="__group__" x="0" y="0" w="282" h="510" measuredW="282" measuredH="510" zOrder="0" locked="false" isInGroup="676">
+          <groupChildrenDescriptors>
+            <control controlID="0" controlTypeID="__group__" x="0" y="0" w="282" h="510" measuredW="282" measuredH="510" zOrder="0" locked="false" isInGroup="0">
+              <groupChildrenDescriptors>
+                <control controlID="0" controlTypeID="com.balsamiq.mockups::iPhone" x="0" y="0" w="-1" h="-1" measuredW="282" measuredH="510" zOrder="0" locked="false" isInGroup="0"/>
+              </groupChildrenDescriptors>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+        <control controlID="1" controlTypeID="__group__" x="26" y="101" w="221" h="32" measuredW="221" measuredH="32" zOrder="1" locked="false" isInGroup="676">
+          <groupChildrenDescriptors>
+            <control controlID="0" controlTypeID="com.balsamiq.mockups::HRule" x="0" y="22" w="221" h="-1" measuredW="100" measuredH="10" zOrder="0" locked="false" isInGroup="1">
+              <controlProperties>
+                <color>6710886</color>
+              </controlProperties>
+            </control>
+            <control controlID="1" controlTypeID="com.balsamiq.mockups::Label" x="39" y="3" w="35" h="22" measuredW="35" measuredH="21" zOrder="1" locked="false" isInGroup="1">
+              <controlProperties>
+                <text>Perfil</text>
+              </controlProperties>
+            </control>
+            <control controlID="2" controlTypeID="com.balsamiq.mockups::Icon" x="10" y="0" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="2" locked="false" isInGroup="1">
+              <controlProperties>
+                <icon>StumbleUponIcon%7Csmall</icon>
+              </controlProperties>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::Webcam" x="35" y="138" w="80" h="83" measuredW="177" measuredH="146" zOrder="2" locked="false" isInGroup="676"/>
+        <control controlID="3" controlTypeID="__group__" x="26" y="379" w="228" h="48" measuredW="228" measuredH="48" zOrder="3" locked="false" isInGroup="676">
+          <groupChildrenDescriptors>
+            <control controlID="0" controlTypeID="com.balsamiq.mockups::RoundButton" x="170" y="0" w="58" h="48" measuredW="32" measuredH="32" zOrder="0" locked="false" isInGroup="3">
+              <controlProperties>
+                <color>3355443</color>
+                <shape>rectangle</shape>
+                <text/>
+              </controlProperties>
+            </control>
+            <control controlID="1" controlTypeID="com.balsamiq.mockups::RoundButton" x="56" y="0" w="58" h="48" measuredW="32" measuredH="32" zOrder="1" locked="false" isInGroup="3">
+              <controlProperties>
+                <borderColor>0</borderColor>
+                <color>3355443</color>
+                <shape>rectangle</shape>
+                <text/>
+              </controlProperties>
+            </control>
+            <control controlID="2" controlTypeID="com.balsamiq.mockups::RoundButton" x="112" y="0" w="64" h="48" measuredW="32" measuredH="32" zOrder="2" locked="false" isInGroup="3">
+              <controlProperties>
+                <borderColor>0</borderColor>
+                <color>3355443</color>
+                <shape>rectangle</shape>
+                <text/>
+              </controlProperties>
+            </control>
+            <control controlID="3" controlTypeID="com.balsamiq.mockups::RoundButton" x="0" y="0" w="58" h="48" measuredW="32" measuredH="32" zOrder="3" locked="false" isInGroup="3">
+              <controlProperties>
+                <borderColor>0</borderColor>
+                <color>3355443</color>
+                <shape>rectangle</shape>
+                <text/>
+              </controlProperties>
+            </control>
+            <control controlID="4" controlTypeID="com.balsamiq.mockups::Icon" x="13" y="8" w="-1" h="-1" measuredW="32" measuredH="32" zOrder="4" locked="false" isInGroup="3">
+              <controlProperties>
+                <color>2848996</color>
+                <icon>HomeIcon%7Cmedium</icon>
+              </controlProperties>
+            </control>
+            <control controlID="5" controlTypeID="com.balsamiq.mockups::Icon" x="69" y="8" w="-1" h="-1" measuredW="32" measuredH="32" zOrder="5" locked="false" isInGroup="3">
+              <controlProperties>
+                <color>16777215</color>
+                <icon>BulletsIcon%7Cmedium</icon>
+              </controlProperties>
+            </control>
+            <control controlID="6" controlTypeID="com.balsamiq.mockups::Icon" x="183" y="8" w="-1" h="-1" measuredW="32" measuredH="32" zOrder="6" locked="false" isInGroup="3">
+              <controlProperties>
+                <color>16777215</color>
+                <icon>GearIcon%7Cmedium</icon>
+              </controlProperties>
+            </control>
+            <control controlID="7" controlTypeID="com.balsamiq.mockups::Icon" x="129" y="8" w="-1" h="-1" measuredW="32" measuredH="32" zOrder="7" locked="false" isInGroup="3">
+              <controlProperties>
+                <color>16777215</color>
+                <icon>ContactIcon%7Cmedium</icon>
+              </controlProperties>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+        <control controlID="4" controlTypeID="__group__" x="122" y="138" w="121" h="70" measuredW="121" measuredH="70" zOrder="4" locked="false" isInGroup="676">
+          <groupChildrenDescriptors>
+            <control controlID="0" controlTypeID="__group__" x="1" y="46" w="120" h="24" measuredW="120" measuredH="24" zOrder="0" locked="false" isInGroup="4">
+              <groupChildrenDescriptors>
+                <control controlID="0" controlTypeID="com.balsamiq.mockups::Icon" x="0" y="0" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="0" locked="false" isInGroup="0">
+                  <controlProperties>
+                    <color>15843890</color>
+                    <icon>StarIcon%7Csmall</icon>
+                  </controlProperties>
+                </control>
+                <control controlID="1" controlTypeID="com.balsamiq.mockups::Icon" x="24" y="0" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="1" locked="false" isInGroup="0">
+                  <controlProperties>
+                    <color>15843890</color>
+                    <icon>StarIcon%7Csmall</icon>
+                  </controlProperties>
+                </control>
+                <control controlID="2" controlTypeID="com.balsamiq.mockups::Icon" x="48" y="0" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="2" locked="false" isInGroup="0">
+                  <controlProperties>
+                    <color>15843890</color>
+                    <icon>StarIcon%7Csmall</icon>
+                  </controlProperties>
+                </control>
+                <control controlID="3" controlTypeID="com.balsamiq.mockups::Icon" x="72" y="0" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="3" locked="false" isInGroup="0">
+                  <controlProperties>
+                    <color>0</color>
+                    <icon>StarIcon%7Csmall</icon>
+                  </controlProperties>
+                </control>
+                <control controlID="4" controlTypeID="com.balsamiq.mockups::Icon" x="96" y="0" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="4" locked="false" isInGroup="0">
+                  <controlProperties>
+                    <icon>StarIcon%7Csmall</icon>
+                  </controlProperties>
+                </control>
+              </groupChildrenDescriptors>
+            </control>
+            <control controlID="1" controlTypeID="com.balsamiq.mockups::Label" x="3" y="0" w="-1" h="-1" measuredW="67" measuredH="21" zOrder="1" locked="false" isInGroup="4">
+              <controlProperties>
+                <bold>true</bold>
+                <text>Wolf%20D1az</text>
+              </controlProperties>
+            </control>
+            <control controlID="2" controlTypeID="com.balsamiq.mockups::Label" x="0" y="22" w="-1" h="-1" measuredW="89" measuredH="21" zOrder="2" locked="false" isInGroup="4">
+              <controlProperties>
+                <italic>false</italic>
+                <text>Tu%20evaluaci%F3n%3A</text>
+              </controlProperties>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+        <control controlID="5" controlTypeID="__group__" x="35" y="228" w="117" h="21" measuredW="117" measuredH="21" zOrder="5" locked="false" isInGroup="676">
+          <groupChildrenDescriptors>
+            <control controlID="0" controlTypeID="com.balsamiq.mockups::Label" x="0" y="0" w="82" h="21" measuredW="83" measuredH="21" zOrder="0" locked="false" isInGroup="5">
+              <controlProperties>
+                <bold>true</bold>
+                <text>Evaluaciones</text>
+              </controlProperties>
+            </control>
+            <control controlID="1" controlTypeID="com.balsamiq.mockups::Label" x="82" y="2" w="-1" h="-1" measuredW="35" measuredH="17" zOrder="1" locked="false" isInGroup="5">
+              <controlProperties>
+                <size>10</size>
+                <text>%281237%29</text>
+              </controlProperties>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+        <control controlID="6" controlTypeID="__group__" x="26" y="308" w="228" h="27" measuredW="228" measuredH="27" zOrder="6" locked="false" isInGroup="676">
+          <groupChildrenDescriptors>
+            <control controlID="0" controlTypeID="com.balsamiq.mockups::TextInput" x="0" y="0" w="153" h="-1" measuredW="79" measuredH="27" zOrder="0" locked="false" isInGroup="6"/>
+            <control controlID="1" controlTypeID="com.balsamiq.mockups::Button" x="147" y="0" w="-1" h="-1" measuredW="81" measuredH="27" zOrder="1" locked="false" isInGroup="6">
+              <controlProperties>
+                <text>Comentar</text>
+              </controlProperties>
+            </control>
+            <control controlID="2" controlTypeID="com.balsamiq.mockups::Label" x="4" y="3" w="-1" h="-1" measuredW="132" measuredH="21" zOrder="2" locked="false" isInGroup="6">
+              <controlProperties>
+                <color>6710886</color>
+                <text>Escribe%20un%20comentario</text>
+              </controlProperties>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+        <control controlID="7" controlTypeID="__group__" x="28" y="255" w="226" h="54" measuredW="226" measuredH="54" zOrder="7" locked="false" isInGroup="676">
+          <groupChildrenDescriptors>
+            <control controlID="0" controlTypeID="__group__" x="0" y="0" w="226" h="54" measuredW="226" measuredH="54" zOrder="0" locked="false" isInGroup="7">
+              <groupChildrenDescriptors>
+                <control controlID="0" controlTypeID="com.balsamiq.mockups::Canvas" x="0" y="0" w="226" h="54" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="0">
+                  <controlProperties>
+                    <borderColor>14540253</borderColor>
+                    <borderStyle>none</borderStyle>
+                    <color>15658734</color>
+                  </controlProperties>
+                </control>
+                <control controlID="1" controlTypeID="__group__" x="2" y="6" w="217" h="47" measuredW="217" measuredH="47" zOrder="1" locked="false" isInGroup="0">
+                  <groupChildrenDescriptors>
+                    <control controlID="0" controlTypeID="__group__" x="0" y="0" w="76" h="16" measuredW="76" measuredH="16" zOrder="0" locked="false" isInGroup="1">
+                      <groupChildrenDescriptors>
+                        <control controlID="0" controlTypeID="com.balsamiq.mockups::Icon" x="0" y="0" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="0" locked="false" isInGroup="0">
+                          <controlProperties>
+                            <color>15843890</color>
+                            <icon>StarIcon%7Cxsmall</icon>
+                          </controlProperties>
+                        </control>
+                        <control controlID="1" controlTypeID="com.balsamiq.mockups::Icon" x="16" y="0" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="1" locked="false" isInGroup="0">
+                          <controlProperties>
+                            <color>15843890</color>
+                            <icon>StarIcon%7Cxsmall</icon>
+                          </controlProperties>
+                        </control>
+                        <control controlID="2" controlTypeID="com.balsamiq.mockups::Icon" x="30" y="0" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="2" locked="false" isInGroup="0">
+                          <controlProperties>
+                            <color>15843890</color>
+                            <icon>StarIcon%7Cxsmall</icon>
+                          </controlProperties>
+                        </control>
+                        <control controlID="3" controlTypeID="com.balsamiq.mockups::Icon" x="45" y="0" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="3" locked="false" isInGroup="0">
+                          <controlProperties>
+                            <color>15843890</color>
+                            <icon>StarIcon%7Cxsmall</icon>
+                          </controlProperties>
+                        </control>
+                        <control controlID="4" controlTypeID="com.balsamiq.mockups::Icon" x="60" y="0" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="4" locked="false" isInGroup="0">
+                          <controlProperties>
+                            <icon>StarIcon%7Cxsmall</icon>
+                          </controlProperties>
+                        </control>
+                      </groupChildrenDescriptors>
+                    </control>
+                    <control controlID="1" controlTypeID="com.balsamiq.mockups::Label" x="77" y="0" w="140" h="18" measuredW="140" measuredH="17" zOrder="1" locked="false" isInGroup="1">
+                      <controlProperties>
+                        <color>6710886</color>
+                        <size>10</size>
+                        <text>Javier%20Alejandro%20Castruita%20L...</text>
+                      </controlProperties>
+                    </control>
+                    <control controlID="2" controlTypeID="com.balsamiq.mockups::Paragraph" x="1" y="20" w="199" h="27" measuredW="200" measuredH="80" zOrder="2" locked="false" isInGroup="1">
+                      <controlProperties>
+                        <size>10</size>
+                        <text>Servicio%20excelente</text>
+                      </controlProperties>
+                    </control>
+                  </groupChildrenDescriptors>
+                </control>
+              </groupChildrenDescriptors>
+            </control>
+            <control controlID="1" controlTypeID="com.balsamiq.mockups::VerticalScrollBar" x="210" y="0" w="-1" h="51" measuredW="16" measuredH="100" zOrder="1" locked="false" isInGroup="7">
+              <controlProperties>
+                <value>100</value>
+              </controlProperties>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="688" controlTypeID="__group__" x="1794" y="39" w="282" h="510" measuredW="282" measuredH="510" zOrder="16" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="__group__" x="0" y="0" w="282" h="510" measuredW="282" measuredH="510" zOrder="0" locked="false" isInGroup="688">
+          <groupChildrenDescriptors>
+            <control controlID="0" controlTypeID="__group__" x="0" y="0" w="282" h="510" measuredW="282" measuredH="510" zOrder="0" locked="false" isInGroup="0">
+              <groupChildrenDescriptors>
+                <control controlID="0" controlTypeID="com.balsamiq.mockups::iPhone" x="0" y="0" w="-1" h="-1" measuredW="282" measuredH="510" zOrder="0" locked="false" isInGroup="0"/>
+              </groupChildrenDescriptors>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+        <control controlID="1" controlTypeID="__group__" x="26" y="101" w="221" h="32" measuredW="221" measuredH="32" zOrder="1" locked="false" isInGroup="688">
+          <groupChildrenDescriptors>
+            <control controlID="0" controlTypeID="com.balsamiq.mockups::HRule" x="0" y="22" w="221" h="-1" measuredW="100" measuredH="10" zOrder="0" locked="false" isInGroup="1">
+              <controlProperties>
+                <color>6710886</color>
+              </controlProperties>
+            </control>
+            <control controlID="1" controlTypeID="com.balsamiq.mockups::Label" x="39" y="3" w="35" h="22" measuredW="35" measuredH="21" zOrder="1" locked="false" isInGroup="1">
+              <controlProperties>
+                <text>Perfil</text>
+              </controlProperties>
+            </control>
+            <control controlID="2" controlTypeID="com.balsamiq.mockups::Icon" x="10" y="0" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="2" locked="false" isInGroup="1">
+              <controlProperties>
+                <icon>StumbleUponIcon%7Csmall</icon>
+              </controlProperties>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::Webcam" x="35" y="138" w="80" h="83" measuredW="177" measuredH="146" zOrder="2" locked="false" isInGroup="688"/>
+        <control controlID="3" controlTypeID="__group__" x="122" y="138" w="121" h="70" measuredW="121" measuredH="70" zOrder="3" locked="false" isInGroup="688">
+          <groupChildrenDescriptors>
+            <control controlID="0" controlTypeID="__group__" x="1" y="46" w="120" h="24" measuredW="120" measuredH="24" zOrder="0" locked="false" isInGroup="3">
+              <groupChildrenDescriptors>
+                <control controlID="0" controlTypeID="com.balsamiq.mockups::Icon" x="0" y="0" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="0" locked="false" isInGroup="0">
+                  <controlProperties>
+                    <color>0</color>
+                    <icon>StarIcon%7Csmall</icon>
+                  </controlProperties>
+                </control>
+                <control controlID="1" controlTypeID="com.balsamiq.mockups::Icon" x="24" y="0" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="1" locked="false" isInGroup="0">
+                  <controlProperties>
+                    <color>0</color>
+                    <icon>StarIcon%7Csmall</icon>
+                  </controlProperties>
+                </control>
+                <control controlID="2" controlTypeID="com.balsamiq.mockups::Icon" x="48" y="0" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="2" locked="false" isInGroup="0">
+                  <controlProperties>
+                    <color>0</color>
+                    <icon>StarIcon%7Csmall</icon>
+                  </controlProperties>
+                </control>
+                <control controlID="3" controlTypeID="com.balsamiq.mockups::Icon" x="72" y="0" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="3" locked="false" isInGroup="0">
+                  <controlProperties>
+                    <color>0</color>
+                    <icon>StarIcon%7Csmall</icon>
+                  </controlProperties>
+                </control>
+                <control controlID="4" controlTypeID="com.balsamiq.mockups::Icon" x="96" y="0" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="4" locked="false" isInGroup="0">
+                  <controlProperties>
+                    <icon>StarIcon%7Csmall</icon>
+                  </controlProperties>
+                </control>
+              </groupChildrenDescriptors>
+            </control>
+            <control controlID="1" controlTypeID="com.balsamiq.mockups::Label" x="3" y="0" w="-1" h="-1" measuredW="67" measuredH="21" zOrder="1" locked="false" isInGroup="3">
+              <controlProperties>
+                <bold>true</bold>
+                <text>Wolf%20D1az</text>
+              </controlProperties>
+            </control>
+            <control controlID="2" controlTypeID="com.balsamiq.mockups::Label" x="0" y="22" w="-1" h="-1" measuredW="94" measuredH="21" zOrder="2" locked="false" isInGroup="3">
+              <controlProperties>
+                <italic>false</italic>
+                <text>Evaluar%20usuario%3A</text>
+              </controlProperties>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+        <control controlID="4" controlTypeID="__group__" x="35" y="228" w="117" h="21" measuredW="117" measuredH="21" zOrder="4" locked="false" isInGroup="688">
+          <groupChildrenDescriptors>
+            <control controlID="0" controlTypeID="com.balsamiq.mockups::Label" x="0" y="0" w="82" h="21" measuredW="83" measuredH="21" zOrder="0" locked="false" isInGroup="4">
+              <controlProperties>
+                <bold>true</bold>
+                <text>Evaluaciones</text>
+              </controlProperties>
+            </control>
+            <control controlID="1" controlTypeID="com.balsamiq.mockups::Label" x="82" y="2" w="-1" h="-1" measuredW="35" measuredH="17" zOrder="1" locked="false" isInGroup="4">
+              <controlProperties>
+                <size>10</size>
+                <text>%281237%29</text>
+              </controlProperties>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+        <control controlID="5" controlTypeID="__group__" x="28" y="255" w="226" h="130" measuredW="226" measuredH="130" zOrder="5" locked="false" isInGroup="688">
+          <groupChildrenDescriptors>
+            <control controlID="0" controlTypeID="__group__" x="0" y="0" w="226" h="54" measuredW="226" measuredH="54" zOrder="0" locked="false" isInGroup="5">
+              <groupChildrenDescriptors>
+                <control controlID="0" controlTypeID="com.balsamiq.mockups::Canvas" x="0" y="0" w="226" h="54" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="0">
+                  <controlProperties>
+                    <borderColor>14540253</borderColor>
+                    <borderStyle>none</borderStyle>
+                    <color>15658734</color>
+                  </controlProperties>
+                </control>
+                <control controlID="1" controlTypeID="__group__" x="2" y="6" w="217" h="47" measuredW="217" measuredH="47" zOrder="1" locked="false" isInGroup="0">
+                  <groupChildrenDescriptors>
+                    <control controlID="0" controlTypeID="__group__" x="0" y="0" w="76" h="16" measuredW="76" measuredH="16" zOrder="0" locked="false" isInGroup="1">
+                      <groupChildrenDescriptors>
+                        <control controlID="0" controlTypeID="com.balsamiq.mockups::Icon" x="0" y="0" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="0" locked="false" isInGroup="0">
+                          <controlProperties>
+                            <color>15843890</color>
+                            <icon>StarIcon%7Cxsmall</icon>
+                          </controlProperties>
+                        </control>
+                        <control controlID="1" controlTypeID="com.balsamiq.mockups::Icon" x="16" y="0" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="1" locked="false" isInGroup="0">
+                          <controlProperties>
+                            <color>15843890</color>
+                            <icon>StarIcon%7Cxsmall</icon>
+                          </controlProperties>
+                        </control>
+                        <control controlID="2" controlTypeID="com.balsamiq.mockups::Icon" x="30" y="0" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="2" locked="false" isInGroup="0">
+                          <controlProperties>
+                            <color>15843890</color>
+                            <icon>StarIcon%7Cxsmall</icon>
+                          </controlProperties>
+                        </control>
+                        <control controlID="3" controlTypeID="com.balsamiq.mockups::Icon" x="45" y="0" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="3" locked="false" isInGroup="0">
+                          <controlProperties>
+                            <color>15843890</color>
+                            <icon>StarIcon%7Cxsmall</icon>
+                          </controlProperties>
+                        </control>
+                        <control controlID="4" controlTypeID="com.balsamiq.mockups::Icon" x="60" y="0" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="4" locked="false" isInGroup="0">
+                          <controlProperties>
+                            <icon>StarIcon%7Cxsmall</icon>
+                          </controlProperties>
+                        </control>
+                      </groupChildrenDescriptors>
+                    </control>
+                    <control controlID="1" controlTypeID="com.balsamiq.mockups::Label" x="77" y="0" w="140" h="18" measuredW="140" measuredH="17" zOrder="1" locked="false" isInGroup="1">
+                      <controlProperties>
+                        <color>6710886</color>
+                        <size>10</size>
+                        <text>Javier%20Alejandro%20Castruita%20L...</text>
+                      </controlProperties>
+                    </control>
+                    <control controlID="2" controlTypeID="com.balsamiq.mockups::Paragraph" x="1" y="20" w="199" h="27" measuredW="200" measuredH="80" zOrder="2" locked="false" isInGroup="1">
+                      <controlProperties>
+                        <size>10</size>
+                        <text>Servicio%20excelente</text>
+                      </controlProperties>
+                    </control>
+                  </groupChildrenDescriptors>
+                </control>
+              </groupChildrenDescriptors>
+            </control>
+            <control controlID="1" controlTypeID="__group__" x="0" y="109" w="226" h="21" measuredW="226" measuredH="21" zOrder="1" locked="false" isInGroup="5">
+              <groupChildrenDescriptors>
+                <control controlID="0" controlTypeID="com.balsamiq.mockups::Canvas" x="0" y="0" w="226" h="15" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="1">
+                  <controlProperties>
+                    <borderColor>14540253</borderColor>
+                    <borderStyle>none</borderStyle>
+                    <color>15658734</color>
+                  </controlProperties>
+                </control>
+                <control controlID="1" controlTypeID="__group__" x="0" y="4" w="199" h="17" measuredW="199" measuredH="17" zOrder="1" locked="false" isInGroup="1">
+                  <groupChildrenDescriptors>
+                    <control controlID="0" controlTypeID="__group__" x="0" y="1" w="76" h="16" measuredW="76" measuredH="16" zOrder="0" locked="false" isInGroup="1">
+                      <groupChildrenDescriptors>
+                        <control controlID="0" controlTypeID="com.balsamiq.mockups::Icon" x="0" y="0" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="0" locked="false" isInGroup="0">
+                          <controlProperties>
+                            <color>15843890</color>
+                            <icon>StarIcon%7Cxsmall</icon>
+                          </controlProperties>
+                        </control>
+                        <control controlID="1" controlTypeID="com.balsamiq.mockups::Icon" x="16" y="0" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="1" locked="false" isInGroup="0">
+                          <controlProperties>
+                            <color>15843890</color>
+                            <icon>StarIcon%7Cxsmall</icon>
+                          </controlProperties>
+                        </control>
+                        <control controlID="2" controlTypeID="com.balsamiq.mockups::Icon" x="28" y="0" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="2" locked="false" isInGroup="0">
+                          <controlProperties>
+                            <color>15843890</color>
+                            <icon>StarIcon%7Cxsmall</icon>
+                          </controlProperties>
+                        </control>
+                        <control controlID="3" controlTypeID="com.balsamiq.mockups::Icon" x="45" y="0" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="3" locked="false" isInGroup="0">
+                          <controlProperties>
+                            <color>15843890</color>
+                            <icon>StarIcon%7Cxsmall</icon>
+                          </controlProperties>
+                        </control>
+                        <control controlID="4" controlTypeID="com.balsamiq.mockups::Icon" x="60" y="0" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="4" locked="false" isInGroup="0">
+                          <controlProperties>
+                            <icon>StarIcon%7Cxsmall</icon>
+                          </controlProperties>
+                        </control>
+                      </groupChildrenDescriptors>
+                    </control>
+                    <control controlID="1" controlTypeID="com.balsamiq.mockups::Label" x="76" y="0" w="123" h="15" measuredW="109" measuredH="17" zOrder="1" locked="false" isInGroup="1">
+                      <controlProperties>
+                        <color>6710886</color>
+                        <size>10</size>
+                        <text>Karla%20de%20la%20Riva%20Reyes</text>
+                      </controlProperties>
+                    </control>
+                  </groupChildrenDescriptors>
+                </control>
+              </groupChildrenDescriptors>
+            </control>
+            <control controlID="2" controlTypeID="__group__" x="0" y="54" w="226" h="54" measuredW="226" measuredH="54" zOrder="2" locked="false" isInGroup="5">
+              <groupChildrenDescriptors>
+                <control controlID="0" controlTypeID="com.balsamiq.mockups::Canvas" x="0" y="0" w="226" h="54" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="2">
+                  <controlProperties>
+                    <borderColor>13421772</borderColor>
+                    <borderStyle>none</borderStyle>
+                    <color>13421772</color>
+                  </controlProperties>
+                </control>
+                <control controlID="1" controlTypeID="__group__" x="4" y="2" w="217" h="35" measuredW="217" measuredH="35" zOrder="1" locked="false" isInGroup="2">
+                  <groupChildrenDescriptors>
+                    <control controlID="0" controlTypeID="com.balsamiq.mockups::Paragraph" x="1" y="20" w="117" h="15" measuredW="200" measuredH="80" zOrder="0" locked="false" isInGroup="1">
+                      <controlProperties>
+                        <size>10</size>
+                        <text>Entrega%20fuera%20de%20tiempo</text>
+                      </controlProperties>
+                    </control>
+                    <control controlID="1" controlTypeID="__group__" x="0" y="0" w="76" h="16" measuredW="76" measuredH="16" zOrder="1" locked="false" isInGroup="1">
+                      <groupChildrenDescriptors>
+                        <control controlID="0" controlTypeID="com.balsamiq.mockups::Icon" x="0" y="0" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="0" locked="false" isInGroup="1">
+                          <controlProperties>
+                            <color>15843890</color>
+                            <icon>StarIcon%7Cxsmall</icon>
+                          </controlProperties>
+                        </control>
+                        <control controlID="1" controlTypeID="com.balsamiq.mockups::Icon" x="16" y="0" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="1" locked="false" isInGroup="1">
+                          <controlProperties>
+                            <color>0</color>
+                            <icon>StarIcon%7Cxsmall</icon>
+                          </controlProperties>
+                        </control>
+                        <control controlID="2" controlTypeID="com.balsamiq.mockups::Icon" x="30" y="0" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="2" locked="false" isInGroup="1">
+                          <controlProperties>
+                            <color>0</color>
+                            <icon>StarIcon%7Cxsmall</icon>
+                          </controlProperties>
+                        </control>
+                        <control controlID="3" controlTypeID="com.balsamiq.mockups::Icon" x="45" y="0" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="3" locked="false" isInGroup="1">
+                          <controlProperties>
+                            <color>0</color>
+                            <icon>StarIcon%7Cxsmall</icon>
+                          </controlProperties>
+                        </control>
+                        <control controlID="4" controlTypeID="com.balsamiq.mockups::Icon" x="60" y="0" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="4" locked="false" isInGroup="1">
+                          <controlProperties>
+                            <icon>StarIcon%7Cxsmall</icon>
+                          </controlProperties>
+                        </control>
+                      </groupChildrenDescriptors>
+                    </control>
+                    <control controlID="2" controlTypeID="com.balsamiq.mockups::Label" x="77" y="0" w="140" h="18" measuredW="135" measuredH="17" zOrder="2" locked="false" isInGroup="1">
+                      <controlProperties>
+                        <color>6710886</color>
+                        <size>10</size>
+                        <text>Roberto%20Covarrubias%20Carrillo</text>
+                      </controlProperties>
+                    </control>
+                  </groupChildrenDescriptors>
+                </control>
+              </groupChildrenDescriptors>
+            </control>
+            <control controlID="3" controlTypeID="com.balsamiq.mockups::VerticalScrollBar" x="210" y="0" w="-1" h="125" measuredW="16" measuredH="100" zOrder="3" locked="false" isInGroup="5"/>
+          </groupChildrenDescriptors>
+        </control>
+        <control controlID="6" controlTypeID="__group__" x="26" y="379" w="228" h="48" measuredW="228" measuredH="48" zOrder="6" locked="false" isInGroup="688">
+          <groupChildrenDescriptors>
+            <control controlID="0" controlTypeID="com.balsamiq.mockups::RoundButton" x="170" y="0" w="58" h="48" measuredW="32" measuredH="32" zOrder="0" locked="false" isInGroup="6">
+              <controlProperties>
+                <color>3355443</color>
+                <shape>rectangle</shape>
+                <text/>
+              </controlProperties>
+            </control>
+            <control controlID="1" controlTypeID="com.balsamiq.mockups::RoundButton" x="56" y="0" w="58" h="48" measuredW="32" measuredH="32" zOrder="1" locked="false" isInGroup="6">
+              <controlProperties>
+                <borderColor>0</borderColor>
+                <color>3355443</color>
+                <shape>rectangle</shape>
+                <text/>
+              </controlProperties>
+            </control>
+            <control controlID="2" controlTypeID="com.balsamiq.mockups::RoundButton" x="112" y="0" w="64" h="48" measuredW="32" measuredH="32" zOrder="2" locked="false" isInGroup="6">
+              <controlProperties>
+                <borderColor>0</borderColor>
+                <color>3355443</color>
+                <shape>rectangle</shape>
+                <text/>
+              </controlProperties>
+            </control>
+            <control controlID="3" controlTypeID="com.balsamiq.mockups::RoundButton" x="0" y="0" w="58" h="48" measuredW="32" measuredH="32" zOrder="3" locked="false" isInGroup="6">
+              <controlProperties>
+                <borderColor>0</borderColor>
+                <color>3355443</color>
+                <shape>rectangle</shape>
+                <text/>
+              </controlProperties>
+            </control>
+            <control controlID="4" controlTypeID="com.balsamiq.mockups::Icon" x="13" y="8" w="-1" h="-1" measuredW="32" measuredH="32" zOrder="4" locked="false" isInGroup="6">
+              <controlProperties>
+                <color>2848996</color>
+                <icon>HomeIcon%7Cmedium</icon>
+              </controlProperties>
+            </control>
+            <control controlID="5" controlTypeID="com.balsamiq.mockups::Icon" x="69" y="8" w="-1" h="-1" measuredW="32" measuredH="32" zOrder="5" locked="false" isInGroup="6">
+              <controlProperties>
+                <color>16777215</color>
+                <icon>BulletsIcon%7Cmedium</icon>
+              </controlProperties>
+            </control>
+            <control controlID="6" controlTypeID="com.balsamiq.mockups::Icon" x="183" y="8" w="-1" h="-1" measuredW="32" measuredH="32" zOrder="6" locked="false" isInGroup="6">
+              <controlProperties>
+                <color>16777215</color>
+                <icon>GearIcon%7Cmedium</icon>
+              </controlProperties>
+            </control>
+            <control controlID="7" controlTypeID="com.balsamiq.mockups::Icon" x="129" y="8" w="-1" h="-1" measuredW="32" measuredH="32" zOrder="7" locked="false" isInGroup="6">
+              <controlProperties>
+                <color>16777215</color>
+                <icon>ContactIcon%7Cmedium</icon>
+              </controlProperties>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+  </controls>
+</mockup>
