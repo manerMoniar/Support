@@ -1,0 +1,81 @@
+//Proceso de creación de repo
+mkdir carpeta
+cd carpeta
+git config --global user.name "Maner"
+git config --global user.email "maner.moniar@gmail.com"
+git init  //crear repo
+ssh-keygen //Generar claves SSH
+ssh-keygen -t rsa -C "your_email@example.com" //Generar claves SSH
+ssh -T git@github.com //Comprobar conexion a GitHUb
+git remote add origin https://github.com/try-git/try_git.git  || git clone ---
+git pull origin master
+
+
+//Agregar archivos
+git add NombreArchivo   //Agregar archivos
+git add .  //Agregar todos los archivos
+git add '*.txt'  //comodines git add
+git status
+git commit -m "Mensaje"
+
+
+//History
+git log //ver commits realizados
+git log --pretty=oneline --max-count=2
+git log --pretty=oneline --since='5 minutes ago'
+git log --pretty=oneline --until='5 minutes ago'
+git log --pretty=oneline --author=<your name>
+git log --pretty=oneline --all
+
+
+//Push
+The name of our remote is origin and the default local branch name is master. 
+The -u tells Git to remember the parameters, so that next time we can simply run git push and Git will know what to do. Go ahead and push it!
+
+git push -u origin master
+
+
+
+//Branches
+git branch nombreRama || git checkout -b greet //Crear rama
+git checkout dev  //Cambiar de rama
+git branch  //Ver ramas
+git merge nombreRama  //Fusiona la rama actual con la indicada
+git branch -a //Ver todas las branches
+
+
+
+//Tags
+git tag v1
+git tag v1-beta
+git checkout v1 //Revisar commits de la v1
+git tag //Ver todas las tags
+git tag -d tagName //remove tag
+
+
+//Ammend message in commit
+git commit --amend -m "Add an author/email comment"
+
+
+//Revert
+git checkout nameFile //before staging
+git reset HEAD nameFile //before committing
+git revert HEAD //reverting the commit
+
+
+
+//Move a file
+mkdir lib
+git mv hello.rb lib
+git status
+
+
+
+//Clonar repos localmente
+
+git clone nombreRepo nombreClonRepo
+
+
+//Eliminar archivos
+
+git rm nombreArchivo
