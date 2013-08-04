@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Soporte</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="home">Inicio</string>
+    <string name="categories">Categorías</string>
+    <string name="user">Usuario</string>
+    <string name="settings">Herramientas</string>
+    <string name="app_access">Acceso</string>
+    <string name="btn_register">Registrar</string>
+    <string name="btn_signin">Ingresar</string>
+	<string name="app_signin">Ingresar</string>
+	<string name="loading">Cargando&#8230;</string>
+	<string name="etv_forgot">¿Olvidaste tu contraseña?</string>
+	<string name="password">Contraseña</string>
+	<string name="email">Correo electrónico</string>
+	<string name="facebook">Facebook</string>
+	<string name="twitter">Twitter</string>
+	<string name="tv_forgot">Ingresa tu correo electrónico asociado a tu cuenta.</string>
+	<string name="recovery">Recuperar</string>
+	<string name="app_recovery_password">Recuperar contraseña</string>
+	<string name="name">Nombre</string>
+	<string name="address">Dirección</string>
+	<string name="telephone">Teléfono</string>
+	<string name="account">Cuenta</string>
+	<string name="profile">Perfil</string>
+	<string name="app_register">Registrar cuenta</string>
+</resources>

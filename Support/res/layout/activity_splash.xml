@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".SplashScreenActivity" 
+    android:background="@drawable/splash">
+
+    <TextView
+        android:id="@+id/textViewLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewLogoSplash"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp"
+        android:text="@string/loading"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textViewLogoSplash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="134dp"
+        android:drawableLeft="@drawable/logoinv"
+        android:text="@string/app_name"
+        android:textColor="#000000"
+        android:textSize="40sp"
+        android:textStyle="italic"
+        android:typeface="serif" />
+
+</RelativeLayout>
