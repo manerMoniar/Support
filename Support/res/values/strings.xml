@@ -2,6 +2,7 @@
 <resources>
 
     <string name="app_name">Soporte</string>
+    <string name="top_ten">Top ten usuarios</string>
     <string name="hello_world">Hello world!</string>
     <string name="home">Inicio</string>
     <string name="categories">Categorías</string>
@@ -26,4 +27,76 @@
 	<string name="account">Cuenta</string>
 	<string name="profile">Perfil</string>
 	<string name="app_register">Registrar cuenta</string>
+	<string name="app_categories">Categorías</string>
+	<string name="information">Información</string>
+	<string name="location">Ubicación</string>
+	<string name="arrow">Flecha</string>
+	
+	<string name="nombre_1">Roberto Covarrubias Carrillo</string>
+	<string name="direccion_1">Calle Oro, Col. Metales #185 A</string>
+	<string name="email_1">rcovar00@gmail.com</string>
+	<string name="tel_1">492 152 45 98</string>
+	<string name="count_1">(250)</string>
+	
+	<string name="nombre_2">Alejandro Isaac Díaz Salinas</string>
+	<string name="direccion_2">CIENCIAS QUIMICAS No. 59 COLONIA SPAUAZ Guadalupe, Zacatecas. CP 98600 </string>
+	<string name="email_2">wolfd1az@gmail.com</string>
+	<string name="tel_2">492 152 45 98</string>
+	<string name="count_2">(1786)</string>
+	
+	<string name="nombre_3">Pavel Michael Noriega Delgado</string>
+	<string name="direccion_3">DOLORES No. 32A COLONIA MIGUEL HIDALGO, Fresnillo, Zacatecas. CP 99034</string>
+	<string name="email_3">pavka007ae@gmail.com</string>
+	<string name="tel_3">492 189 85 47</string>
+	<string name="count_3">(587)</string>
+	
+	<string name="nombre_4">Dante Alan Cervantes Alfaro</string>
+	<string name="direccion_4">ANDADOR L3 No. 216 FRACCIONAMIENTO ISSSTE ZAC 1, Zacatecas, Zacatecas. CP 98087</string>
+	<string name="email_4">etnad_08@hotmail.com</string>
+	<string name="tel_4">4921181262</string>
+	<string name="count_4">(554)</string>
+	
+	<string name="nombre_5">Maner Moniar</string>
+	<string name="direccion_5">ROJO COL. COLORES #125 GUADALUPE, ZACATECAS CP 98000</string>
+	<string name="email_5">maner.moniar@gmail.com</string>
+	<string name="tel_5">4927574412</string>
+	<string name="count_5">(4569)</string>
+	
+	<string name="nombre_6">Diana Elizabeth Salas Navarro</string>
+	<string name="direccion_6">DOLORES No. 32A COLONIA MIGUEL HIDALGO, Fresnillo, Zacatecas. CP 99034</string>
+	<string name="email_6">bella_naory_06@hotmail.com</string>
+	<string name="tel_6">492 785 98 54</string>
+	<string name="count_6">(9874)</string>
+	
+	<string name="nombre_7">Haide Eulalia Hernandez Matancillas</string>
+	<string name="direccion_7">DOLORES No. 32A COLONIA MIGUEL HIDALGO, Fresnillo, Zacatecas. CP 99034</string>
+	<string name="email_7">ediah_45@hotmail.com</string>
+	<string name="tel_7">492 784 56 98</string>
+	<string name="count_7">(45)</string>
+	
+	<string name="nombre_8">Lilia Marisol Molina Mariscal</string>
+	<string name="direccion_8">DOLORES No. 32A COLONIA MIGUEL HIDALGO, Fresnillo, Zacatecas. CP 99034</string>
+	<string name="email_8">lilia-sol06@hotmail.com</string>
+	<string name="tel_8">492 985 21 45</string>
+	<string name="count_8">(546)</string>
+	
+	<string name="nombre_9">Manuel Martin Gonzalez Basurto</string>
+	<string name="direccion_9">DOLORES No. 32A COLONIA MIGUEL HIDALGO, Fresnillo, Zacatecas. CP 99034</string>
+	<string name="email_9">timi_bio@hotmail.com</string>
+	<string name="tel_9">492 478 58 69</string>
+	<string name="count_9">(120)</string>
+	
+	<string name="nombre_10">Brandon Eduardo Guerrero Lopez</string>
+	<string name="direccion_10">DOLORES No. 32A COLONIA MIGUEL HIDALGO, Fresnillo, Zacatecas. CP 99034</string>
+	<string name="email_10">brandonzac@hotmail.com</string>
+	<string name="tel_10">492 123 25 65</string>
+	<string name="count_10">(356)</string>
+	
+	<string name="cat_printers">Impresoras</string>
+	<string name="cat_cellphones">Celulares</string>
+	<string name="cat_cameras">Cámaras</string>
+	<string name="cat_laptops">Laptops</string>
+	<string name="cat_audio">Equipo de audio</string>
+	<string name="cat_plotters">Plotters</string>
+	
 </resources>

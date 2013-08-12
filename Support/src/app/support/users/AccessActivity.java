@@ -9,7 +9,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import app.support.MainActivity;
 import app.support.R;
+import app.support.categories.CategoriesActivity;
 
 public class AccessActivity extends Activity implements OnClickListener{
 	
@@ -30,7 +32,7 @@ public class AccessActivity extends Activity implements OnClickListener{
 	
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.main_user, menu);
+		getMenuInflater().inflate(R.menu.user, menu);
 		return true;
 	}
 
@@ -52,14 +54,22 @@ public class AccessActivity extends Activity implements OnClickListener{
 	
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
+		Intent intent;
 	    switch (item.getItemId()) {
 	        case R.id.menu_home:
+	        	intent = new Intent(AccessActivity.this, MainActivity.class);
+	        	startActivity(intent);
 	            return true;
 	        case R.id.menu_categories:
+	        	intent = new Intent(AccessActivity.this, CategoriesActivity.class);
+	        	startActivity(intent);
 	            return true;
 	        case R.id.menu_user:
-	        	Intent intent = new Intent(AccessActivity.this, AccessActivity.class);
+	        	intent = new Intent(AccessActivity.this, AccessActivity.class);
 	        	startActivity(intent);
+	            return true;
+	        case R.id.menu_settings:
+	        	
 	            return true;
 	        default:
 	            return super.onOptionsItemSelected(item);

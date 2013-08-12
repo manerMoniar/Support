@@ -3,7 +3,7 @@
     <item
         android:id="@+id/menu_home"
         android:showAsAction="ifRoom"
-        android:icon="@drawable/home_active"
+        android:icon="@drawable/home"
         android:title="@string/home"/>
  
     <item
@@ -15,7 +15,7 @@
     <item
         android:id="@+id/menu_user"
         android:showAsAction="ifRoom"
-        android:icon="@drawable/user"
+        android:icon="@drawable/user_active"
         android:title="@string/user"/>
  
     <item

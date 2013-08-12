@@ -1,4 +1,4 @@
-package app.support.users;
+package app.support.home;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -7,55 +7,41 @@ import android.os.Bundle;
 import android.support.v4.app.NavUtils;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.View.OnClickListener;
-import android.widget.TextView;
 import app.support.MainActivity;
 import app.support.R;
 import app.support.categories.CategoriesActivity;
+import app.support.users.AccessActivity;
 
-public class SignInActivity extends Activity implements OnClickListener {
-
-	TextView etv;
+public class ProfileActivity extends Activity{
 	
 	@SuppressLint("NewApi")
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_signin);
+		setContentView(R.layout.activity_profile);		
 		getActionBar().setDisplayHomeAsUpEnabled(true);
-		
-		etv = (TextView) findViewById(R.id.textViewForget);
-		etv.setOnClickListener(this);
 	}
 	
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.user, menu);
+		getMenuInflater().inflate(R.menu.main, menu);
 		return true;
 	}
-
-	@Override
-	public void onClick(View v) {
-		Intent intent = new Intent(SignInActivity.this, ForgotActivity.class);
-		startActivity(intent);
 		
-	}
-	
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		Intent intent;
 	    switch (item.getItemId()) {
 	        case R.id.menu_home:
-	        	intent = new Intent(SignInActivity.this, MainActivity.class);
+	        	intent = new Intent(ProfileActivity.this, MainActivity.class);
 	        	startActivity(intent);
 	            return true;
 	        case R.id.menu_categories:
-	        	intent = new Intent(SignInActivity.this, CategoriesActivity.class);
+	        	intent = new Intent(ProfileActivity.this, CategoriesActivity.class);
 	        	startActivity(intent);
 	            return true;
 	        case R.id.menu_user:
-	        	intent = new Intent(SignInActivity.this, AccessActivity.class);
+	        	intent = new Intent(ProfileActivity.this, AccessActivity.class);
 	        	startActivity(intent);
 	            return true;
 	        case R.id.menu_settings:
