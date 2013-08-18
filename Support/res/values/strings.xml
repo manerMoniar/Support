@@ -2,7 +2,7 @@
 <resources>
 
     <string name="app_name">Soporte</string>
-    <string name="top_ten">Top ten usuarios</string>
+    <string name="top_ten">Top Ten usuarios</string>
     <string name="hello_world">Hello world!</string>
     <string name="home">Inicio</string>
     <string name="categories">Categorías</string>
@@ -31,6 +31,8 @@
 	<string name="information">Información</string>
 	<string name="location">Ubicación</string>
 	<string name="arrow">Flecha</string>
+	<string name="user_review">Evaluar usuario</string>
+	<string name="reviews">Evaluaciones</string>
 	
 	<string name="nombre_1">Roberto Covarrubias Carrillo</string>
 	<string name="direccion_1">Calle Oro, Col. Metales #185 A</string>

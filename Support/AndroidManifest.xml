@@ -85,6 +85,16 @@
             android:name="android.support.PARENT_ACTIVITY"
             android:value="app.support.MainActivity" />
         </activity>
+        <activity
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:name="app.support.home.ReviewsActivity"
+            android:label="@string/reviews"
+        	android:parentActivityName="app.support.home.ProfileActivity" >
+        <!-- Parent activity meta-data to support API level 7+ -->
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="app.support.home.ProfileActivity" />
+        </activity>
     </application>
 
 </manifest>

@@ -7,49 +7,33 @@ import android.os.Bundle;
 import android.support.v4.app.NavUtils;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.View.OnClickListener;
-import android.widget.LinearLayout;
-import android.widget.TabHost;
+import android.widget.RatingBar;
+import android.widget.RatingBar.OnRatingBarChangeListener;
 import android.widget.Toast;
 import app.support.MainActivity;
 import app.support.R;
 import app.support.categories.CategoriesActivity;
 import app.support.users.AccessActivity;
 
-public class ProfileActivity extends Activity{
+public class ReviewsActivity extends Activity{
 	
 	@SuppressLint("NewApi")
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_profile);		
+		setContentView(R.layout.activity_reviews);		
 		getActionBar().setDisplayHomeAsUpEnabled(true);
-				 
-		TabHost tabs=(TabHost)findViewById(android.R.id.tabhost);
-		tabs.setup();
-		 
-		TabHost.TabSpec spec=tabs.newTabSpec("mitab1");
-		spec.setContent(R.id.tabInformation);
-		spec.setIndicator("Información", null);
-		tabs.addTab(spec);
 		
-		spec=tabs.newTabSpec("mitab2");
-		spec.setContent(R.id.tabLocation);
-		spec.setIndicator("Ubicación", null);
-		tabs.addTab(spec);
-		 
-		tabs.setCurrentTab(0);
-		
-		LinearLayout linearLayout = (LinearLayout) findViewById(R.id.ratingProfile);
-		linearLayout.setOnClickListener(new OnClickListener(){
+		RatingBar rate = (RatingBar) findViewById(R.id.ratingBarReviews);
+		rate.setOnRatingBarChangeListener(new OnRatingBarChangeListener() {
+			
 			@Override
-			public void onClick(View arg0) {
+			public void onRatingChanged(RatingBar ratingBar, float rating, boolean fromUser) {
 				// TODO Auto-generated method stub
-				Intent intent = new Intent(ProfileActivity.this, ReviewsActivity.class);
-	        	startActivity(intent);
+				Toast.makeText(getApplicationContext(), "Rating: "+ rating, Toast.LENGTH_SHORT).show();
 			}
-	    });
+		});
+			
 	}
 	
 	public boolean onCreateOptionsMenu(Menu menu) {
@@ -63,15 +47,15 @@ public class ProfileActivity extends Activity{
 		Intent intent;
 	    switch (item.getItemId()) {
 	        case R.id.menu_home:
-	        	intent = new Intent(ProfileActivity.this, MainActivity.class);
+	        	intent = new Intent(ReviewsActivity.this, MainActivity.class);
 	        	startActivity(intent);
 	            return true;
 	        case R.id.menu_categories:
-	        	intent = new Intent(ProfileActivity.this, CategoriesActivity.class);
+	        	intent = new Intent(ReviewsActivity.this, CategoriesActivity.class);
 	        	startActivity(intent);
 	            return true;
 	        case R.id.menu_user:
-	        	intent = new Intent(ProfileActivity.this, AccessActivity.class);
+	        	intent = new Intent(ReviewsActivity.this, AccessActivity.class);
 	        	startActivity(intent);
 	            return true;
 	        case R.id.menu_settings:

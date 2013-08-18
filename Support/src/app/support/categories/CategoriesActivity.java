@@ -9,7 +9,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.Toast;
 import android.widget.AdapterView.OnItemClickListener;
 import app.support.MainActivity;
 import app.support.R;
@@ -71,14 +70,17 @@ public class CategoriesActivity extends Activity{
 		        case R.id.menu_home:
 		        	intent = new Intent(CategoriesActivity.this, MainActivity.class);
 		        	startActivity(intent);
+		        	finish();
 		            return true;
 		        case R.id.menu_categories:
 		        	intent = new Intent(CategoriesActivity.this, CategoriesActivity.class);
 		        	startActivity(intent);
+		        	finish();
 		            return true;
 		        case R.id.menu_user:
 		        	intent = new Intent(CategoriesActivity.this, AccessActivity.class);
 		        	startActivity(intent);
+		        	finish();
 		            return true;
 		        case R.id.menu_settings:
 		        	

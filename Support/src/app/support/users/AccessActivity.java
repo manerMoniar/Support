@@ -59,14 +59,17 @@ public class AccessActivity extends Activity implements OnClickListener{
 	        case R.id.menu_home:
 	        	intent = new Intent(AccessActivity.this, MainActivity.class);
 	        	startActivity(intent);
+	        	finish();
 	            return true;
 	        case R.id.menu_categories:
 	        	intent = new Intent(AccessActivity.this, CategoriesActivity.class);
 	        	startActivity(intent);
+	        	finish();
 	            return true;
 	        case R.id.menu_user:
 	        	intent = new Intent(AccessActivity.this, AccessActivity.class);
 	        	startActivity(intent);
+	        	finish();
 	            return true;
 	        case R.id.menu_settings:
 	        	

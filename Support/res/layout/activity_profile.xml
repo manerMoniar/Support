@@ -1,7 +1,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical" 
+    android:padding="14dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -11,6 +12,7 @@
             android:id="@+id/imageView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:contentDescription="@string/profile"
             android:src="@drawable/profile" />
 
         <LinearLayout
@@ -19,38 +21,58 @@
             android:orientation="vertical" >
 
             <TextView
-                android:id="@+id/textView1"
+                android:id="@+id/textViewNameProfile"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:maxLines="2"
                 android:text="@string/nombre_1"
-                android:textStyle="bold"
-                android:textSize="20sp" />
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/textViewEmailProfile"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/email_1"
-                android:textAppearance="?android:attr/textAppearanceMedium" />
+                android:text="@string/email_1" />
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/textViewTelProfile"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/tel_1"
-                android:textAppearance="?android:attr/textAppearanceMedium" />
+                android:text="@string/tel_1" />
 
             <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent" >
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:clickable="true"
+                android:id="@+id/ratingProfile"
+                android:paddingTop="5dp">
 
                 <RatingBar
-                    android:id="@+id/ratingBar1"
+                    android:id="@+id/ratingBarProfile"
+                    style="@style/CustomRatingBar"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:isIndicator="true"
+                    android:minHeight="24dp"
+                    android:layout_gravity="center_vertical"
+                    android:rating="4"
+                    android:stepSize="1" />
 
+	            <TextView android:id="@+id/textView6" 
+	                android:layout_width="wrap_content" 
+	                android:layout_height="wrap_content" 
+	                android:layout_gravity="center_vertical"
+	                android:text="@string/count_1" 
+	                android:paddingLeft="10dp"
+	                android:textAppearance="?android:attr/textAppearanceSmall" >	                
+	            </TextView>
+            
             </LinearLayout>
+
+            
+
+            
 
         </LinearLayout>
 
@@ -78,7 +100,7 @@
                 android:layout_height="match_parent" >
 
                 <LinearLayout
-                    android:id="@+id/tab1"
+                    android:id="@+id/tabInformation"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent" >
 
@@ -86,12 +108,12 @@
                         android:id="@+id/textView4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="TextView" />
+                        android:text="Reparación de impresoras" />
 
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/tab2"
+                    android:id="@+id/tabLocation"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent" >
                     
@@ -99,7 +121,7 @@
                         android:id="@+id/textView5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="TextView" />
+                        android:text="@string/direccion_1" />
                     
                 </LinearLayout>
 

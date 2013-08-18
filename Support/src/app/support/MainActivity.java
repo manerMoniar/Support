@@ -33,7 +33,7 @@ public class MainActivity extends Activity {
 				new ElementList(getResources().getDrawable(R.drawable.person), 
 								getResources().getString(R.string.nombre_1),
 								getResources().getString(R.string.direccion_1),
-								2, getResources().getString(R.string.count_1), 1),
+								4, getResources().getString(R.string.count_1), 1),
 				new ElementList(getResources().getDrawable(R.drawable.person), 
 								getResources().getString(R.string.nombre_2),
 								getResources().getString(R.string.direccion_2),
@@ -104,14 +104,17 @@ public class MainActivity extends Activity {
 	        case R.id.menu_home:
 	        	intent = new Intent(MainActivity.this, MainActivity.class);
 	        	startActivity(intent);
+	        	finish();
 	            return true;
 	        case R.id.menu_categories:
 	        	intent = new Intent(MainActivity.this, CategoriesActivity.class);
 	        	startActivity(intent);
+	        	finish();
 	            return true;
 	        case R.id.menu_user:
 	        	intent = new Intent(MainActivity.this, AccessActivity.class);
 	        	startActivity(intent);
+	        	finish();
 	            return true;
 	        case R.id.menu_settings:
 	        	
