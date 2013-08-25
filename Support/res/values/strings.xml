@@ -2,7 +2,7 @@
 <resources>
 
     <string name="app_name">Soporte</string>
-    <string name="top_ten">Top Ten usuarios</string>
+    <string name="top_ten">Top ten usuarios</string>
     <string name="hello_world">Hello world!</string>
     <string name="home">Inicio</string>
     <string name="categories">Categorías</string>
@@ -31,8 +31,9 @@
 	<string name="information">Información</string>
 	<string name="location">Ubicación</string>
 	<string name="arrow">Flecha</string>
-	<string name="user_review">Evaluar usuario</string>
+	<string name="user_review">Evaluar usuario:</string>
 	<string name="reviews">Evaluaciones</string>
+	<string name="your_review">Tu evaluación:</string>
 	
 	<string name="nombre_1">Roberto Covarrubias Carrillo</string>
 	<string name="direccion_1">Calle Oro, Col. Metales #185 A</string>
@@ -100,5 +101,12 @@
 	<string name="cat_laptops">Laptops</string>
 	<string name="cat_audio">Equipo de audio</string>
 	<string name="cat_plotters">Plotters</string>
+	
+	<string name="comentario_1">Excelente servicio.</string>
+	<string name="comentario_2">Pésimo servicio, yo mande formatear mi laptop porque estaba muy lenta y ahora esta peor.</string>
+	<string name="comentario_3">Entrega rápida.</string>
+	<string name="comentario_4">Carisimo, pero buen servicio.</string>
+	<string name="comentario_5">Gente sin experiencia no debería arreglarte tu computadora.</string>
+	<string name="comentario_6">Recomendado&#8230;</string>
 	
 </resources>

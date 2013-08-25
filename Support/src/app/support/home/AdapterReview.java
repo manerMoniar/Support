@@ -6,18 +6,17 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.TextView;
 import app.support.R;
 
-public class Adapter extends BaseAdapter {
-
-	Activity activity;
-	ElementList element;
-	ElementList[] elements;
+public class AdapterReview extends BaseAdapter {
 	
-	public Adapter(Activity activity, ElementList[] elements) {
+	Activity activity;
+	ElementReview element;
+	ElementReview[] elements;
+	
+	public AdapterReview(Activity activity, ElementReview[] elements) {
 		super();
 		this.activity = activity;
 		this.elements = elements;
@@ -52,25 +51,19 @@ public class Adapter extends BaseAdapter {
 		
 		if(v == null){
 			LayoutInflater li = (LayoutInflater) activity.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-			v = li.inflate(R.layout.activity_element, null);
+			v = li.inflate(R.layout.activity_element_reviews, null);
 		}
 		
 		element = elements[position];
 		
-		ImageView iv = (ImageView) v.findViewById(R.id.imageViewPerson);
-		iv.setImageDrawable(element.getIcon());
-		
-		TextView name = (TextView) v.findViewById(R.id.textViewName);
-		name.setText(element.getName());
-		
-		TextView address = (TextView) v.findViewById(R.id.textViewAddress);
-		address.setText(element.getAddress());
-		
-		RatingBar rating = (RatingBar) v.findViewById(R.id.ratingBarHome);
+		RatingBar rating = (RatingBar) v.findViewById(R.id.ratingBarReviews);
 		rating.setRating(element.getStars());
 		
-		TextView countStars = (TextView) v.findViewById(R.id.textViewCountStars);
-		countStars.setText(element.getCountStars());
+		TextView user = (TextView) v.findViewById(R.id.textViewNameUserReview);
+		user.setText(element.getNameUserReview());
+		
+		TextView userComment = (TextView) v.findViewById(R.id.textViewUserComment);
+		userComment.setText(element.getUserComment());
 		
 		return v;
 	}

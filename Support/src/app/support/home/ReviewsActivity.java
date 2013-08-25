@@ -7,8 +7,10 @@ import android.os.Bundle;
 import android.support.v4.app.NavUtils;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ListView;
 import android.widget.RatingBar;
 import android.widget.RatingBar.OnRatingBarChangeListener;
+import android.widget.TextView;
 import android.widget.Toast;
 import app.support.MainActivity;
 import app.support.R;
@@ -17,6 +19,9 @@ import app.support.users.AccessActivity;
 
 public class ReviewsActivity extends Activity{
 	
+	Activity context;
+	ListView list;
+	
 	@SuppressLint("NewApi")
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -24,15 +29,40 @@ public class ReviewsActivity extends Activity{
 		setContentView(R.layout.activity_reviews);		
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 		
-		RatingBar rate = (RatingBar) findViewById(R.id.ratingBarReviews);
+		RatingBar rate = (RatingBar) findViewById(R.id.ratingBarReview);
 		rate.setOnRatingBarChangeListener(new OnRatingBarChangeListener() {
 			
 			@Override
 			public void onRatingChanged(RatingBar ratingBar, float rating, boolean fromUser) {
 				// TODO Auto-generated method stub
-				Toast.makeText(getApplicationContext(), "Rating: "+ rating, Toast.LENGTH_SHORT).show();
+				TextView textRate = (TextView) findViewById(R.id.textViewRate);
+				textRate.setText(getResources().getString(R.string.your_review));
+				Toast.makeText(getApplicationContext(), "Tu evaluación: " + rating, Toast.LENGTH_SHORT).show();
 			}
 		});
+		
+		context = this;
+		list = (ListView) findViewById(R.id.listViewReviews);
+		
+		ElementReview[] elements = {
+			    new ElementReview(5, getResources().getString(R.string.nombre_2), 
+			    		getResources().getString(R.string.comentario_1), 1),
+	    		new ElementReview(1, getResources().getString(R.string.nombre_3), 
+			    		getResources().getString(R.string.comentario_2), 2),
+	    		new ElementReview(4, getResources().getString(R.string.nombre_4), 
+			    		getResources().getString(R.string.comentario_3), 3),
+	    		new ElementReview(3, getResources().getString(R.string.nombre_5), 
+			    		getResources().getString(R.string.comentario_4), 4),
+	    		new ElementReview(1, getResources().getString(R.string.nombre_6), 
+			    		getResources().getString(R.string.comentario_5), 5),
+	    		new ElementReview(4, getResources().getString(R.string.nombre_7), 
+			    		getResources().getString(R.string.comentario_6), 6),
+			    		
+		};
+		
+		AdapterReview adapter = new AdapterReview(context, elements);
+		
+		list.setAdapter(adapter);
 			
 	}
 	

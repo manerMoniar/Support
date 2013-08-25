@@ -20,7 +20,6 @@ public class MainActivity extends Activity {
 	Activity context;
 	ListView list;
 	
-	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
