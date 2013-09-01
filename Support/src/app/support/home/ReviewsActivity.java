@@ -55,8 +55,8 @@ public class ReviewsActivity extends Activity{
 			    		getResources().getString(R.string.comentario_4), 4),
 	    		new ElementReview(1, getResources().getString(R.string.nombre_6), 
 			    		getResources().getString(R.string.comentario_5), 5),
-	    		new ElementReview(4, getResources().getString(R.string.nombre_7), 
-			    		getResources().getString(R.string.comentario_6), 6),
+	    		/*new ElementReview(4, getResources().getString(R.string.nombre_7), 
+			    		getResources().getString(R.string.comentario_6), 6),*/
 			    		
 		};
 		

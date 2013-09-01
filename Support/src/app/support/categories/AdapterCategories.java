@@ -1,5 +1,7 @@
 package app.support.categories;
 
+import java.util.ArrayList;
+
 import android.app.Activity;
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -13,10 +15,9 @@ public class AdapterCategories extends BaseAdapter {
 	
 	Activity activity;
 	ElementCategoryList element;
-	ElementCategoryList[] elements;
+	ArrayList<ElementCategoryList> elements;
 	
-	
-	public AdapterCategories(Activity activity, ElementCategoryList[] elements) {
+	public AdapterCategories(Activity activity, ArrayList<ElementCategoryList> elements) {
 		super();
 		this.activity = activity;
 		this.elements = elements;
@@ -25,23 +26,19 @@ public class AdapterCategories extends BaseAdapter {
 	@Override
 	public int getCount() {
 		// TODO Auto-generated method stub
-		int count = 0;
-		if(elements.length > 0){
-			count = elements.length;
-		}
-		return count;
+		return elements.size();
 	}
 
 	@Override
 	public Object getItem(int position) {
 		// TODO Auto-generated method stub
-		return elements[position];
+		return elements.get(position);
 	}
 
 	@Override
 	public long getItemId(int position) {
 		// TODO Auto-generated method stub
-		return elements[position].getId();
+		return elements.get(position).getId();
 	}
 
 	@Override
@@ -54,13 +51,10 @@ public class AdapterCategories extends BaseAdapter {
 			v = li.inflate(R.layout.activity_element_category, null);
 		}
 		
-		element = elements[position];
+		element = elements.get(position);
 		
 		TextView name = (TextView) v.findViewById(R.id.textViewCategory);
 		name.setText(element.getCategory());
-		
-		/*ImageView iv = (ImageView) v.findViewById(R.id.imageViewArrow);
-		iv.setImageDrawable(R.drawable.arrow);*/
 		
 		return v;
 	}
