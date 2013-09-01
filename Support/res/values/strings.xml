@@ -2,7 +2,7 @@
 <resources>
 
     <string name="app_name">Soporte</string>
-    <string name="top_ten">Top ten usuarios</string>
+    <string name="top_ten">Top Usuarios</string>
     <string name="hello_world">Hello world!</string>
     <string name="home">Inicio</string>
     <string name="categories">Categorías</string>
@@ -94,14 +94,7 @@
 	<string name="email_10">brandonzac@hotmail.com</string>
 	<string name="tel_10">492 123 25 65</string>
 	<string name="count_10">(356)</string>
-	
-	<string name="cat_printers">Impresoras</string>
-	<string name="cat_cellphones">Celulares</string>
-	<string name="cat_cameras">Cámaras</string>
-	<string name="cat_laptops">Laptops</string>
-	<string name="cat_audio">Equipo de audio</string>
-	<string name="cat_plotters">Plotters</string>
-	
+		
 	<string name="comentario_1">Excelente servicio.</string>
 	<string name="comentario_2">Pésimo servicio, yo mande formatear mi laptop porque estaba muy lenta y ahora esta peor.</string>
 	<string name="comentario_3">Entrega rápida.</string>

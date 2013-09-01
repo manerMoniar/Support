@@ -1,5 +1,7 @@
 package app.support.home;
 
+import java.util.ArrayList;
+
 import android.app.Activity;
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -15,9 +17,9 @@ public class Adapter extends BaseAdapter {
 
 	Activity activity;
 	ElementList element;
-	ElementList[] elements;
+	ArrayList<ElementList> elements;
 	
-	public Adapter(Activity activity, ElementList[] elements) {
+	public Adapter(Activity activity, ArrayList<ElementList> elements) {
 		super();
 		this.activity = activity;
 		this.elements = elements;
@@ -26,23 +28,19 @@ public class Adapter extends BaseAdapter {
 	@Override
 	public int getCount() {
 		// TODO Auto-generated method stub
-		int count = 0;
-		if(elements.length > 0){
-			count = elements.length;
-		}
-		return count;
+		return elements.size();
 	}
 
 	@Override
 	public Object getItem(int position) {
 		// TODO Auto-generated method stub
-		return elements[position];
+		return elements.get(position);
 	}
 
 	@Override
 	public long getItemId(int position) {
 		// TODO Auto-generated method stub
-		return elements[position].getId();
+		return elements.get(position).getId();
 	}
 
 	@Override
@@ -55,7 +53,7 @@ public class Adapter extends BaseAdapter {
 			v = li.inflate(R.layout.activity_element, null);
 		}
 		
-		element = elements[position];
+		element = elements.get(position);
 		
 		ImageView iv = (ImageView) v.findViewById(R.id.imageViewPerson);
 		iv.setImageDrawable(element.getIcon());

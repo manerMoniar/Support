@@ -4,7 +4,6 @@ import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.NavUtils;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -26,8 +25,13 @@ public class ProfileActivity extends Activity{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_profile);		
 		getActionBar().setDisplayHomeAsUpEnabled(true);
+		
+		Bundle bundle = this.getIntent().getExtras();
+		Toast.makeText(getApplicationContext(), bundle.getString("id"), Toast.LENGTH_SHORT).show();
+		
+		
 				 
-		TabHost tabs=(TabHost)findViewById(android.R.id.tabhost);
+		/*TabHost tabs=(TabHost)findViewById(android.R.id.tabhost);
 		tabs.setup();
 		 
 		TabHost.TabSpec spec=tabs.newTabSpec("mitab1");
@@ -40,7 +44,7 @@ public class ProfileActivity extends Activity{
 		spec.setIndicator("Ubicación", null);
 		tabs.addTab(spec);
 		 
-		tabs.setCurrentTab(0);
+		tabs.setCurrentTab(0);*/
 		
 		LinearLayout linearLayout = (LinearLayout) findViewById(R.id.ratingProfile);
 		linearLayout.setOnClickListener(new OnClickListener(){

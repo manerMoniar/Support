@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
         android:layout_weight="0.49"
-        android:text="@string/cat_printers"
+        android:text="@string/app_categories"
         android:textSize="18sp"
         android:textStyle="bold" />
 

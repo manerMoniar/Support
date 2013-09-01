@@ -1,13 +1,22 @@
 package app.support;
 
+import java.util.ArrayList;
+import org.apache.http.NameValuePair;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 import android.app.Activity;
+import android.app.ProgressDialog;
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 import android.widget.AdapterView.OnItemClickListener;
 import app.support.categories.CategoriesActivity;
 import app.support.home.Adapter;
@@ -19,6 +28,10 @@ public class MainActivity extends Activity {
 
 	Activity context;
 	ListView list;
+	private String url="http://192.168.2.3/support/home.php";
+    private ProgressDialog loadDialog;
+	ArrayList<ElementList> arrayUsers = new ArrayList<ElementList>();
+    ElementList elements;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -28,63 +41,7 @@ public class MainActivity extends Activity {
 		context = this;
 		list = (ListView) findViewById(R.id.listViewHome);
 		
-		ElementList[] elements = {
-				new ElementList(getResources().getDrawable(R.drawable.person), 
-								getResources().getString(R.string.nombre_1),
-								getResources().getString(R.string.direccion_1),
-								4, getResources().getString(R.string.count_1), 1),
-				new ElementList(getResources().getDrawable(R.drawable.person), 
-								getResources().getString(R.string.nombre_2),
-								getResources().getString(R.string.direccion_2),
-								4, getResources().getString(R.string.count_2), 2),
-				new ElementList(getResources().getDrawable(R.drawable.person), 
-								getResources().getString(R.string.nombre_3),
-								getResources().getString(R.string.direccion_3),
-								5, getResources().getString(R.string.count_3), 3),
-				new ElementList(getResources().getDrawable(R.drawable.person), 
-								getResources().getString(R.string.nombre_4),
-								getResources().getString(R.string.direccion_4),
-								3, getResources().getString(R.string.count_4), 4),
-				new ElementList(getResources().getDrawable(R.drawable.person), 
-								getResources().getString(R.string.nombre_5),
-								getResources().getString(R.string.direccion_5),
-								2, getResources().getString(R.string.count_5), 5),
-				new ElementList(getResources().getDrawable(R.drawable.person), 
-								getResources().getString(R.string.nombre_6),
-								getResources().getString(R.string.direccion_6),
-								4, getResources().getString(R.string.count_6), 6),
-				new ElementList(getResources().getDrawable(R.drawable.person), 
-								getResources().getString(R.string.nombre_7),
-								getResources().getString(R.string.direccion_7),
-								5, getResources().getString(R.string.count_7), 7),
-				new ElementList(getResources().getDrawable(R.drawable.person), 
-								getResources().getString(R.string.nombre_8),
-								getResources().getString(R.string.direccion_8),
-								2, getResources().getString(R.string.count_8), 8),
-				new ElementList(getResources().getDrawable(R.drawable.person), 
-								getResources().getString(R.string.nombre_9),
-								getResources().getString(R.string.direccion_9),
-								1, getResources().getString(R.string.count_9), 9),
-				new ElementList(getResources().getDrawable(R.drawable.person), 
-								getResources().getString(R.string.nombre_10),
-								getResources().getString(R.string.direccion_10),
-								3, getResources().getString(R.string.count_10), 10),
-		};
-		
-		Adapter adapter = new Adapter(context, elements);
-		
-		list.setAdapter(adapter);
-		
-		list.setOnItemClickListener(new OnItemClickListener() {
-
-			@Override
-			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
-				// TODO Auto-generated method stub
-				Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
-	        	startActivity(intent);
-			}
-		});
-		
+		new AsyncUsers().execute();
 	}
 
 	@Override
@@ -96,8 +53,7 @@ public class MainActivity extends Activity {
 	
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
-		//Log.i("ActionBar", "Test!");
-		
+
 		Intent intent;
 	    switch (item.getItemId()) {
 	        case R.id.menu_home:
@@ -122,5 +78,87 @@ public class MainActivity extends Activity {
 	            return super.onOptionsItemSelected(item);
 	    }
 	}
+	
+	public boolean loadUsers(){
+		ArrayList<NameValuePair> parameters= new ArrayList<NameValuePair>();
+		JSONArray jData = new RequestManager(url, parameters).getServerResponse();
+
+		if (jData!=null && jData.length() > 0){
+			try {
+				for (int i = 0; i < jData.length(); i++) {
+					JSONObject jsonChildNode = jData.getJSONObject(i);
+					
+					//get the content of each tag
+				    int idUser = jsonChildNode.optInt("id");
+				    String nameUser = jsonChildNode.optString("nombre");
+				    String address = jsonChildNode.optString("direccion");
+				    int stars = jsonChildNode.optInt("puntos");
+				    int total = jsonChildNode.optInt("total");
+				    
+				    elements = new ElementList(getResources().getDrawable(R.drawable.person), nameUser, address, stars, "("+total+")", idUser);
+				    arrayUsers.add(elements);
+				}
+				return true;
+			}catch (JSONException e) {
+				Log.e("#EXCEPTION: loadCategories()", e.getMessage());
+				return false;
+			}		         
+		}else{
+			Log.e("Error", "Data");
+    		return false;
+		}
+	}
+	
+	public void setUsers(){
+		Adapter adapter = new Adapter(context, arrayUsers);
+		list.setAdapter(adapter);
+		
+		list.setOnItemClickListener(new OnItemClickListener() {
+
+			@Override
+			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
+				// TODO Auto-generated method stub
+				Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
+				intent.putExtra("id", ""+arg3);
+	        	startActivity(intent);
+			}
+			
+		});
+	}
+	
+	
+	//starting asynchronus task  <input parameters, progress, result>
+	private class AsyncUsers extends AsyncTask< String, Integer, String > {
+    	
+        protected void onPreExecute() {
+        	//start progress dialog
+        	loadDialog = new ProgressDialog(MainActivity.this);
+        	loadDialog.setMessage("Cargando...");
+        	loadDialog.setIndeterminate(false);
+        	loadDialog.setCancelable(true);
+        	loadDialog.show();
+        }
+ 
+		protected String doInBackground(String... params) {
+			if (loadUsers() == true){    		    		
+    			return "ok";
+    		}else{    		
+    			return "error";   	          	  
+    		}
+		}
+       
+        protected void onPostExecute(String result) {
+        	//hide progress dialog.
+        	loadDialog.dismiss();
+        	
+        	if (result.equals("ok")){
+        		setUsers();
+        	}
+        	else{
+        		Toast.makeText(getApplicationContext(), "Ups! hubo un error. Inténtalo más tarde.", Toast.LENGTH_LONG).show();
+        	}
+		}
+		
+    }
 
 }

@@ -9,7 +9,7 @@ import app.support.R;
 
 public class SplashActivity extends Activity {
 	
-	 	private final int DURACION_SPLASH = 2000; // 2 segundos
+	 	private final int DURACION_SPLASH = 1500; // 1.5 segundos
 	 
 	    @Override
 	    public void onCreate(Bundle savedInstanceState) {

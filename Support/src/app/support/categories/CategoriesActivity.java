@@ -2,6 +2,7 @@ package app.support.categories;
 
 import java.util.ArrayList;
 import org.apache.http.NameValuePair;
+import org.apache.http.message.BasicNameValuePair;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -18,6 +19,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
+import android.widget.Toast;
 import app.support.MainActivity;
 import app.support.R;
 import app.support.RequestManager;
@@ -27,7 +29,7 @@ public class CategoriesActivity extends Activity{
 	
 		Activity context;
 		ListView list;
-	    private String url="http://192.168.110.219/php/support.php";
+	    private String url="http://192.168.2.3/support/categories.php";
 	    private ProgressDialog loadDialog;
 	    ArrayList<ElementCategoryList> arrayCategories = new ArrayList<ElementCategoryList>();
 	    ElementCategoryList elements;
@@ -78,6 +80,8 @@ public class CategoriesActivity extends Activity{
 		
 		public boolean loadCategories(){
 			ArrayList<NameValuePair> parameters= new ArrayList<NameValuePair>();
+			parameters.add(new BasicNameValuePair("androidRequest", "1"));
+			
 			JSONArray jData = new RequestManager(url, parameters).getServerResponse();
 
     		if (jData!=null && jData.length() > 0){
@@ -94,11 +98,11 @@ public class CategoriesActivity extends Activity{
 					}
 					return true;
 				}catch (JSONException e) {
-					Log.e("JSON", "ERROR");
+					Log.e("#EXCEPTION: loadCategories()", e.getMessage());
 					return false;
 				}		         
-    		}else{	//json obtenido invalido verificar parte WEB.
-    			Log.e("JSON", "ERROR");
+    		}else{
+    			Log.e("Error", "Data");
 	    		return false;
     		}
 		}
@@ -132,7 +136,7 @@ public class CategoriesActivity extends Activity{
 	        	loadDialog = new ProgressDialog(CategoriesActivity.this);
 	        	loadDialog.setMessage("Cargando...");
 	        	loadDialog.setIndeterminate(false);
-	        	loadDialog.setCancelable(false);
+	        	loadDialog.setCancelable(true);
 	        	loadDialog.show();
 	        }
 	 
@@ -150,6 +154,9 @@ public class CategoriesActivity extends Activity{
 	        	
 	        	if (result.equals("ok")){
 	        		setCategories();
+	        	}
+	        	else{
+	        		Toast.makeText(getApplicationContext(), "Ups! hubo un error. Inténtalo más tarde.", Toast.LENGTH_LONG).show();
 	        	}
 			}
 			
