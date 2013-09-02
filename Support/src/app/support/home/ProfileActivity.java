@@ -10,8 +10,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.LinearLayout;
+import android.widget.ListView;
 import android.widget.TabHost;
-import android.widget.Toast;
 import app.support.MainActivity;
 import app.support.R;
 import app.support.categories.CategoriesActivity;
@@ -19,6 +19,9 @@ import app.support.users.AccessActivity;
 
 public class ProfileActivity extends Activity{
 	
+	Activity context;
+	ListView list;
+
 	@SuppressLint("NewApi")
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -26,12 +29,7 @@ public class ProfileActivity extends Activity{
 		setContentView(R.layout.activity_profile);		
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 		
-		Bundle bundle = this.getIntent().getExtras();
-		Toast.makeText(getApplicationContext(), bundle.getString("id"), Toast.LENGTH_SHORT).show();
-		
-		
-				 
-		/*TabHost tabs=(TabHost)findViewById(android.R.id.tabhost);
+		TabHost tabs=(TabHost)findViewById(android.R.id.tabhost);
 		tabs.setup();
 		 
 		TabHost.TabSpec spec=tabs.newTabSpec("mitab1");
@@ -44,9 +42,9 @@ public class ProfileActivity extends Activity{
 		spec.setIndicator("Ubicación", null);
 		tabs.addTab(spec);
 		 
-		tabs.setCurrentTab(0);*/
-		
-		LinearLayout linearLayout = (LinearLayout) findViewById(R.id.ratingProfile);
+		tabs.setCurrentTab(0);
+		 
+	    LinearLayout linearLayout = (LinearLayout) findViewById(R.id.ratingProfile);
 		linearLayout.setOnClickListener(new OnClickListener(){
 			@Override
 			public void onClick(View arg0) {
@@ -55,6 +53,7 @@ public class ProfileActivity extends Activity{
 	        	startActivity(intent);
 			}
 	    });
+ 
 	}
 	
 	public boolean onCreateOptionsMenu(Menu menu) {
@@ -70,14 +69,17 @@ public class ProfileActivity extends Activity{
 	        case R.id.menu_home:
 	        	intent = new Intent(ProfileActivity.this, MainActivity.class);
 	        	startActivity(intent);
+	        	finish();
 	            return true;
 	        case R.id.menu_categories:
 	        	intent = new Intent(ProfileActivity.this, CategoriesActivity.class);
 	        	startActivity(intent);
+	        	finish();
 	            return true;
 	        case R.id.menu_user:
 	        	intent = new Intent(ProfileActivity.this, AccessActivity.class);
 	        	startActivity(intent);
+	        	finish();
 	            return true;
 	        case R.id.menu_settings:
 	        	

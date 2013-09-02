@@ -33,14 +33,17 @@ public class RegisterActivity extends Activity {
 	        case R.id.menu_home:
 	        	intent = new Intent(RegisterActivity.this, MainActivity.class);
 	        	startActivity(intent);
+	        	finish();
 	            return true;
 	        case R.id.menu_categories:
 	        	intent = new Intent(RegisterActivity.this, CategoriesActivity.class);
 	        	startActivity(intent);
+	        	finish();
 	            return true;
 	        case R.id.menu_user:
 	        	intent = new Intent(RegisterActivity.this, AccessActivity.class);
 	        	startActivity(intent);
+	        	finish();
 	            return true;
 	        case R.id.menu_settings:
 	        	

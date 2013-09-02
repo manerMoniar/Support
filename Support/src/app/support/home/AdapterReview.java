@@ -2,7 +2,6 @@ package app.support.home;
 
 import android.app.Activity;
 import android.content.Context;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -50,14 +49,11 @@ public class AdapterReview extends BaseAdapter {
 		// TODO Auto-generated method stub
 		View v = convertView;
 		
-		//Log.i("LogsAndroid", "Mensaje "+position);
-		
+
 		if(v == null){
 			LayoutInflater li = (LayoutInflater) activity.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 			v = li.inflate(R.layout.activity_element_reviews, null);
-				
-			//Log.i("LogsAndroid", "Mensaje de información "+position);
-			
+
 			  if (position % 2 == 0)
 				  v.setBackgroundResource(R.drawable.odd);
 	          else

@@ -2,12 +2,10 @@ package app.support.categories;
 
 import java.util.ArrayList;
 import org.apache.http.NameValuePair;
-import org.apache.http.message.BasicNameValuePair;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 import android.app.Activity;
-import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.AsyncTask;
@@ -19,6 +17,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 import app.support.MainActivity;
 import app.support.R;
@@ -29,7 +28,7 @@ public class CategoriesActivity extends Activity{
 	
 		Activity context;
 		ListView list;
-	    private String url="http://192.168.2.3/support/categories.php";
+	    private String url="http://192.168.110.219/support/categories.php";
 	    private ProgressDialog loadDialog;
 	    ArrayList<ElementCategoryList> arrayCategories = new ArrayList<ElementCategoryList>();
 	    ElementCategoryList elements;
@@ -80,8 +79,6 @@ public class CategoriesActivity extends Activity{
 		
 		public boolean loadCategories(){
 			ArrayList<NameValuePair> parameters= new ArrayList<NameValuePair>();
-			parameters.add(new BasicNameValuePair("androidRequest", "1"));
-			
 			JSONArray jData = new RequestManager(url, parameters).getServerResponse();
 
     		if (jData!=null && jData.length() > 0){
@@ -91,9 +88,9 @@ public class CategoriesActivity extends Activity{
 						
 						//get the content of each tag
 					    int idCategory = jsonChildNode.optInt("id");
-					    String nameCategory = jsonChildNode.optString("nombre");
+					    String categoryName = jsonChildNode.optString("nombre");
 					    
-					    elements = new ElementCategoryList(nameCategory, idCategory);
+					    elements = new ElementCategoryList(categoryName, idCategory);
 						arrayCategories.add(elements);
 					}
 					return true;
@@ -116,13 +113,13 @@ public class CategoriesActivity extends Activity{
 				
 				@Override
 				public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
-					// TODO Auto-generated method stub
-					new AlertDialog.Builder(context)
-					.setTitle("Categoría")
-					.setMessage(arg3+"")
-					.setIcon(android.R.drawable.ic_dialog_alert)
-					.setPositiveButton(android.R.string.yes, null)
-					.show();
+					// TODO Auto-generated method stub					
+					TextView v=(TextView) arg1.findViewById(R.id.textViewCategory);
+
+					Intent intent = new Intent(CategoriesActivity.this, UsersCategoriesActivity.class);
+					intent.putExtra("idCategory", ""+arg3);
+					intent.putExtra("nameCategory", ""+v.getText());
+		        	startActivity(intent);
 				}
 				
 			});
@@ -136,7 +133,7 @@ public class CategoriesActivity extends Activity{
 	        	loadDialog = new ProgressDialog(CategoriesActivity.this);
 	        	loadDialog.setMessage("Cargando...");
 	        	loadDialog.setIndeterminate(false);
-	        	loadDialog.setCancelable(true);
+	        	loadDialog.setCancelable(false);
 	        	loadDialog.show();
 	        }
 	 

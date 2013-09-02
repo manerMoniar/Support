@@ -2,20 +2,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/imageLogo"
     android:layout_width="match_parent"
+    android:background="#ffffff"
     android:layout_height="match_parent" >
-
-
-    <TextView
-         android:id="@+id/textViewAccess"
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:layout_below="@+id/textViewLogoAccess"
-         android:layout_centerHorizontal="true"
-         android:layout_marginTop="10dp"
-         android:text="@string/app_name"
-         android:textColor="#000000"
-         android:textSize="30sp"
-         android:textStyle="italic" />
 
     <Button
         android:id="@+id/buttonRegister"
@@ -28,15 +16,6 @@
         android:background="@drawable/orange"
         android:text="@string/btn_register" />
 
-    <TextView
-        android:id="@+id/textViewLogoAccess"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="32dp"
-        android:background="@drawable/logo" />
-
     <Button
         android:id="@+id/buttonSignIn"
         android:layout_width="wrap_content"
@@ -47,5 +26,29 @@
         android:layout_marginRight="37dp"
         android:background="@drawable/white"
         android:text="@string/btn_signin" />
+
+    <TextView
+        android:id="@+id/textViewLogoSplash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/app_name"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        android:typeface="serif" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:background="@color/orange"
+        android:padding="15dp"
+        android:src="@drawable/tool" />
 
 </RelativeLayout>

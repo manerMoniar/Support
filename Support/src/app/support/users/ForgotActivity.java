@@ -33,14 +33,17 @@ public class ForgotActivity extends Activity {
 	        case R.id.menu_home:
 	        	intent = new Intent(ForgotActivity.this, MainActivity.class);
 	        	startActivity(intent);
+	        	finish();
 	            return true;
 	        case R.id.menu_categories:
 	        	intent = new Intent(ForgotActivity.this, CategoriesActivity.class);
 	        	startActivity(intent);
+	        	finish();
 	            return true;
 	        case R.id.menu_user:
 	        	intent = new Intent(ForgotActivity.this, AccessActivity.class);
 	        	startActivity(intent);
+	        	finish();
 	            return true;
 	        case R.id.menu_settings:
 	        	
