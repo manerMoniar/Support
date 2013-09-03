@@ -28,15 +28,15 @@ import app.support.categories.CategoriesActivity;
 import app.support.home.Adapter;
 import app.support.home.ElementList;
 import app.support.home.ProfileActivity;
+import app.support.settings.SettingsActivity;
 import app.support.users.AccessActivity;
 
 public class UsersCategoriesActivity extends Activity {
 
 	Activity context;
 	ListView list;
-	private String url="http://192.168.110.219/support/usersCategories.php";
+	private String url="http://"+MainActivity.server+"/support/usersCategories.php";
     private ProgressDialog loadDialog;
-	ArrayList<ElementList> arrayUsers = new ArrayList<ElementList>();
     ElementList elements;
     String category;
 	
@@ -46,6 +46,8 @@ public class UsersCategoriesActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
+		
+		MainActivity.arrayUsers = new ArrayList<ElementList>();
 		
 		context = this;
 		list = (ListView) findViewById(R.id.listViewHome);
@@ -86,7 +88,9 @@ public class UsersCategoriesActivity extends Activity {
 	        	finish();
 	            return true;
 	        case R.id.menu_settings:
-	        	
+	        	intent = new Intent(UsersCategoriesActivity.this, SettingsActivity.class);
+	        	startActivity(intent);
+	        	finish();
 	            return true;
 	        case android.R.id.home:
 	            NavUtils.navigateUpFromSameTask(this);
@@ -107,14 +111,16 @@ public class UsersCategoriesActivity extends Activity {
 					JSONObject jsonChildNode = jData.getJSONObject(i);
 					
 					//get the content of each tag
-				    int idUser = jsonChildNode.optInt("id");
+					int idUser = jsonChildNode.optInt("id");
 				    String userName = jsonChildNode.optString("nombre");
 				    String address = jsonChildNode.optString("direccion");
 				    int stars = jsonChildNode.optInt("puntos");
 				    int total = jsonChildNode.optInt("total");
+				    String email = jsonChildNode.optString("email");
+				    String telephone = jsonChildNode.optString("telefono");
 				    
-				    elements = new ElementList(getResources().getDrawable(R.drawable.person), userName, address, stars, "("+total+")", idUser);
-				    arrayUsers.add(elements);
+				    elements = new ElementList(getResources().getDrawable(R.drawable.person), userName, address, stars, "("+total+")", email, telephone, idUser);
+				    MainActivity.arrayUsers.add(elements);
 				}
 				
 				return true;
@@ -129,7 +135,7 @@ public class UsersCategoriesActivity extends Activity {
 	}
 	
 	public void setUsers(){
-		Adapter adapter = new Adapter(context, arrayUsers);
+		Adapter adapter = new Adapter(context, MainActivity.arrayUsers);
 		list.setAdapter(adapter);
 		
 		list.setOnItemClickListener(new OnItemClickListener() {
@@ -138,7 +144,7 @@ public class UsersCategoriesActivity extends Activity {
 			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
 				// TODO Auto-generated method stub
 				Intent intent = new Intent(UsersCategoriesActivity.this, ProfileActivity.class);
-				intent.putExtra("idUsuario", ""+arg3);
+				intent.putExtra("idUsuario", ""+arg2);
 	        	startActivity(intent);
 			}
 			

@@ -12,7 +12,7 @@
 	    android:orientation="vertical" >
 	
 	    <TextView
-	        android:id="@+id/textViewName"
+	        android:id="@+id/textViewRegisterAccount"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
 	        android:layout_marginTop="28dp"
@@ -21,7 +21,7 @@
 	        android:textStyle="bold" />
 	
 	    <EditText
-	        android:id="@+id/editText1"
+	        android:id="@+id/editTextRegisterEmail"
 	        android:layout_width="match_parent"
 	        android:layout_height="wrap_content"
 	        android:ems="12"
@@ -29,7 +29,7 @@
 	        android:inputType="textEmailAddress" />
 	
 	    <EditText
-	        android:id="@+id/editText2"
+	        android:id="@+id/editTextRegisterPassword"
 	        android:layout_width="match_parent"
 	        android:layout_height="wrap_content"
 	        android:ems="10"
@@ -37,7 +37,7 @@
 	        android:inputType="textPassword" />
 	
 	    <TextView
-	        android:id="@+id/textViewAddress"
+	        android:id="@+id/textViewRegisterProfile"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
 	        android:layout_marginTop="20dp"
@@ -46,7 +46,7 @@
 	        android:textStyle="bold" />
 	
 	    <EditText
-	        android:id="@+id/editText3"
+	        android:id="@+id/editTextRegisterName"
 	        android:layout_width="match_parent"
 	        android:layout_height="wrap_content"
 	        android:ems="10"
@@ -54,7 +54,7 @@
 	        android:inputType="textPersonName" />
 	
 	    <EditText
-	        android:id="@+id/editText4"
+	        android:id="@+id/editTextRegisterAddress"
 	        android:layout_width="match_parent"
 	        android:layout_height="wrap_content"
 	        android:ems="10"
@@ -62,7 +62,7 @@
 	        android:inputType="textPostalAddress" />
 	
 	    <EditText
-	        android:id="@+id/editText5"
+	        android:id="@+id/editTextRegisterTelephone"
 	        android:layout_width="match_parent"
 	        android:layout_height="wrap_content"
 	        android:ems="10"
@@ -70,7 +70,7 @@
 	        android:inputType="phone" />
 	
 	    <Button
-	        android:id="@+id/button1"
+	        android:id="@+id/buttonRegister"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
 	        android:layout_marginTop="29dp"

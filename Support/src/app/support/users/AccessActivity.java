@@ -12,6 +12,7 @@ import android.widget.Button;
 import app.support.MainActivity;
 import app.support.R;
 import app.support.categories.CategoriesActivity;
+import app.support.settings.SettingsActivity;
 
 public class AccessActivity extends Activity implements OnClickListener{
 	
@@ -72,7 +73,9 @@ public class AccessActivity extends Activity implements OnClickListener{
 	        	finish();
 	            return true;
 	        case R.id.menu_settings:
-	        	
+	        	intent = new Intent(AccessActivity.this, SettingsActivity.class);
+	        	startActivity(intent);
+	        	finish();
 	            return true;
 	        default:
 	            return super.onOptionsItemSelected(item);

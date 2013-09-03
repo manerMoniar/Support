@@ -9,7 +9,7 @@
 			$dbh = new PDO("mysql:host=$hostname;dbname=$database", $username, $password);
 			
 			$sql = $dbh->prepare ("SELECT usuarios.id, nombre, direccion, email, telefono, COUNT(puntuacion.id) AS total, ROUND(AVG(puntos)) AS puntos from usuarios 
-									INNER JOIN puntuacion ON usuarios.id = puntuacion.idUsuarioDestino
+									LEFT JOIN puntuacion ON usuarios.id = puntuacion.idUsuarioDestino
 									WHERE Activo = 1 and usuarios.id = :idUsuario");
 			$sql->bindParam(':idUsuario', $idUsuario, PDO::PARAM_INT);
 			$sql->execute();

@@ -4,7 +4,6 @@ import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.app.NavUtils;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ListView;
@@ -15,12 +14,14 @@ import android.widget.Toast;
 import app.support.MainActivity;
 import app.support.R;
 import app.support.categories.CategoriesActivity;
+import app.support.settings.SettingsActivity;
 import app.support.users.AccessActivity;
 
 public class ReviewsActivity extends Activity{
 	
 	Activity context;
 	ListView list;
+	String usuario;
 	
 	@SuppressLint("NewApi")
 	@Override
@@ -28,6 +29,13 @@ public class ReviewsActivity extends Activity{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_reviews);		
 		getActionBar().setDisplayHomeAsUpEnabled(true);
+		
+		usuario = (String) getIntent().getExtras().get("idUsuario");
+		ElementList element = MainActivity.arrayUsers.get(Integer.parseInt(usuario));
+		
+		TextView tName = (TextView) findViewById(R.id.textViewNameReview);
+		tName.setText(element.name);
+		
 		
 		RatingBar rate = (RatingBar) findViewById(R.id.ratingBarReview);
 		rate.setOnRatingBarChangeListener(new OnRatingBarChangeListener() {
@@ -54,10 +62,7 @@ public class ReviewsActivity extends Activity{
 	    		new ElementReview(3, getResources().getString(R.string.nombre_5), 
 			    		getResources().getString(R.string.comentario_4), 4),
 	    		new ElementReview(1, getResources().getString(R.string.nombre_6), 
-			    		getResources().getString(R.string.comentario_5), 5),
-	    		/*new ElementReview(4, getResources().getString(R.string.nombre_7), 
-			    		getResources().getString(R.string.comentario_6), 6),*/
-			    		
+			    		getResources().getString(R.string.comentario_5), 5),	
 		};
 		
 		AdapterReview adapter = new AdapterReview(context, elements);
@@ -92,10 +97,15 @@ public class ReviewsActivity extends Activity{
 	        	finish();
 	            return true;
 	        case R.id.menu_settings:
-	        	
+	        	intent = new Intent(ReviewsActivity.this, SettingsActivity.class);
+	        	startActivity(intent);
+	        	finish();
 	            return true;
 	        case android.R.id.home:
-	            NavUtils.navigateUpFromSameTask(this);
+	        	intent = new Intent(ReviewsActivity.this, ProfileActivity.class);
+				intent.putExtra("idUsuario", ""+usuario);
+	        	startActivity(intent);
+	            //NavUtils.navigateUpFromSameTask(this);
 	            return true;
 	        default:
 	            return super.onOptionsItemSelected(item);

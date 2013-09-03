@@ -22,15 +22,17 @@ import app.support.categories.CategoriesActivity;
 import app.support.home.Adapter;
 import app.support.home.ElementList;
 import app.support.home.ProfileActivity;
+import app.support.settings.SettingsActivity;
 import app.support.users.AccessActivity;
 
 public class MainActivity extends Activity {
 
 	Activity context;
 	ListView list;
-	private String url="http://192.168.110.219/support/home.php";
+	public static String server = "www.mawd1tic.com";
+	private String url="http://"+server+"/support/home.php";
     private ProgressDialog loadDialog;
-	ArrayList<ElementList> arrayUsers = new ArrayList<ElementList>();
+	public static ArrayList<ElementList> arrayUsers = new ArrayList<ElementList>();
     ElementList elements;
 	
 	@Override
@@ -40,6 +42,7 @@ public class MainActivity extends Activity {
 		
 		context = this;
 		list = (ListView) findViewById(R.id.listViewHome);
+		arrayUsers = new ArrayList<ElementList>();
 		
 		new AsyncUsers().execute();
 	}
@@ -72,7 +75,9 @@ public class MainActivity extends Activity {
 	        	finish();
 	            return true;
 	        case R.id.menu_settings:
-	        	
+	        	intent = new Intent(MainActivity.this, SettingsActivity.class);
+	        	startActivity(intent);
+	        	finish();
 	            return true;
 	        default:
 	            return super.onOptionsItemSelected(item);
@@ -94,8 +99,10 @@ public class MainActivity extends Activity {
 				    String address = jsonChildNode.optString("direccion");
 				    int stars = jsonChildNode.optInt("puntos");
 				    int total = jsonChildNode.optInt("total");
+				    String email = jsonChildNode.optString("email");
+				    String telephone = jsonChildNode.optString("telefono");
 				    
-				    elements = new ElementList(getResources().getDrawable(R.drawable.person), userName, address, stars, "("+total+")", idUser);
+				    elements = new ElementList(getResources().getDrawable(R.drawable.person), userName, address, stars, "("+total+")", email, telephone, idUser);
 				    arrayUsers.add(elements);
 				}
 				
@@ -120,7 +127,7 @@ public class MainActivity extends Activity {
 			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
 				// TODO Auto-generated method stub
 				Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
-				intent.putExtra("idUsuario", ""+arg3);
+				intent.putExtra("idUsuario", ""+arg2);
 	        	startActivity(intent);
 			}
 			

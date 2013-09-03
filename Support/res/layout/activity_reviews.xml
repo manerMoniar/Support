@@ -23,7 +23,7 @@
             android:orientation="vertical" >
 
             <TextView
-                android:id="@+id/textViewNameProfile"
+                android:id="@+id/textViewNameReview"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:maxLines="2"

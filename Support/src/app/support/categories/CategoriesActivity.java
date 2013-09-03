@@ -22,13 +22,14 @@ import android.widget.Toast;
 import app.support.MainActivity;
 import app.support.R;
 import app.support.RequestManager;
+import app.support.settings.SettingsActivity;
 import app.support.users.AccessActivity;
 
 public class CategoriesActivity extends Activity{
 	
 		Activity context;
 		ListView list;
-	    private String url="http://192.168.110.219/support/categories.php";
+	    private String url="http://"+MainActivity.server+"/support/categories.php";
 	    private ProgressDialog loadDialog;
 	    ArrayList<ElementCategoryList> arrayCategories = new ArrayList<ElementCategoryList>();
 	    ElementCategoryList elements;
@@ -70,7 +71,9 @@ public class CategoriesActivity extends Activity{
 		        	finish();
 		            return true;
 		        case R.id.menu_settings:
-		        	
+		        	intent = new Intent(CategoriesActivity.this, SettingsActivity.class);
+		        	startActivity(intent);
+		        	finish();
 		            return true;
 		        default:
 		            return super.onOptionsItemSelected(item);

@@ -69,6 +69,11 @@
             android:name="android.support.PARENT_ACTIVITY"
             android:value="app.support.users.AccessActivity" />
         </activity>
+        <activity
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:name="app.support.users.MyProfileActivity"
+            android:label="@string/my_profile">
+        </activity>
         
         <!-- Views Categories -->
         <activity
@@ -107,6 +112,23 @@
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
             android:value="app.support.home.ProfileActivity" />
+        </activity>
+        
+        <!-- Views Settings -->
+        <activity
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:name="app.support.settings.SettingsActivity"
+            android:label="@string/app_conf">
+        </activity>
+        <activity
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:name="app.support.settings.AboutActivity"
+            android:label="@string/app_info"
+        	android:parentActivityName="app.support.settings.SettingsActivity" >
+        <!-- Parent activity meta-data to support API level 7+ -->
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="app.support.settings.SettingsActivity" />
         </activity>
 
     </application>

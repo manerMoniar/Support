@@ -1,4 +1,4 @@
-package app.support.users;
+package app.support.settings;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -10,44 +10,45 @@ import android.view.MenuItem;
 import app.support.MainActivity;
 import app.support.R;
 import app.support.categories.CategoriesActivity;
-import app.support.settings.SettingsActivity;
+import app.support.users.AccessActivity;
 
-public class ForgotActivity extends Activity {
-			
+public class AboutActivity extends Activity{
+	
 	@SuppressLint("NewApi")
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_forgot);
+		setContentView(R.layout.activity_about);		
 		getActionBar().setDisplayHomeAsUpEnabled(true);
+		
 	}
 	
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.user, menu);
+		getMenuInflater().inflate(R.menu.settings, menu);
 		return true;
 	}
-	
+		
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		Intent intent;
 	    switch (item.getItemId()) {
 	        case R.id.menu_home:
-	        	intent = new Intent(ForgotActivity.this, MainActivity.class);
+	        	intent = new Intent(AboutActivity.this, MainActivity.class);
 	        	startActivity(intent);
 	        	finish();
 	            return true;
 	        case R.id.menu_categories:
-	        	intent = new Intent(ForgotActivity.this, CategoriesActivity.class);
+	        	intent = new Intent(AboutActivity.this, CategoriesActivity.class);
 	        	startActivity(intent);
 	        	finish();
 	            return true;
 	        case R.id.menu_user:
-	        	intent = new Intent(ForgotActivity.this, AccessActivity.class);
+	        	intent = new Intent(AboutActivity.this, AccessActivity.class);
 	        	startActivity(intent);
 	        	finish();
 	            return true;
 	        case R.id.menu_settings:
-	        	intent = new Intent(ForgotActivity.this, SettingsActivity.class);
+	        	intent = new Intent(AboutActivity.this, SettingsActivity.class);
 	        	startActivity(intent);
 	        	finish();
 	            return true;

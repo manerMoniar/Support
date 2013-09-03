@@ -27,14 +27,17 @@ import app.support.MainActivity;
 import app.support.R;
 import app.support.RequestManager;
 import app.support.categories.CategoriesActivity;
+import app.support.home.ElementList;
+import app.support.settings.SettingsActivity;
 
 public class SignInActivity extends Activity {
 
 	TextView etv;
 	EditText user;
 	EditText pass;
-	Button buttonRegister;
-	private String url="http://192.168.110.219/support/login.php";
+	Button buttonSignIn;
+	public static ElementList element;
+	private String url="http://"+MainActivity.server+"/support/login.php";
     private ProgressDialog loadDialog;
 	
 	@SuppressLint("NewApi")
@@ -46,9 +49,9 @@ public class SignInActivity extends Activity {
 		
 		user = (EditText) findViewById(R.id.editTextEmail);
         pass = (EditText) findViewById(R.id.editTextPassword);
-        buttonRegister = (Button) findViewById(R.id.buttonSignIn);
+        buttonSignIn = (Button) findViewById(R.id.buttonSignIn);
         
-        buttonRegister.setOnClickListener(new View.OnClickListener(){
+        buttonSignIn.setOnClickListener(new View.OnClickListener(){
 
 			@Override
 			public void onClick(View v) {
@@ -69,8 +72,18 @@ public class SignInActivity extends Activity {
         	
         });
 		
-		//etv = (TextView) findViewById(R.id.textViewForget);
-		//etv.setOnClickListener(this);
+		etv = (TextView) findViewById(R.id.textViewForget);
+		
+		etv.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent intent = new Intent(SignInActivity.this, ForgotActivity.class);
+				startActivity(intent);
+			}
+		});
+		
 	}
 	
 	public boolean onCreateOptionsMenu(Menu menu) {
@@ -78,13 +91,6 @@ public class SignInActivity extends Activity {
 		getMenuInflater().inflate(R.menu.user, menu);
 		return true;
 	}
-
-	/*@Override
-	public void onClick(View v) {
-		Intent intent = new Intent(SignInActivity.this, ForgotActivity.class);
-		startActivity(intent);
-		
-	}*/
 	
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
@@ -106,7 +112,9 @@ public class SignInActivity extends Activity {
 	        	finish();
 	            return true;
 	        case R.id.menu_settings:
-	        	
+	        	intent = new Intent(SignInActivity.this, SettingsActivity.class);
+	        	startActivity(intent);
+	        	finish();
 	            return true;
 	        case android.R.id.home:
 	            NavUtils.navigateUpFromSameTask(this);
@@ -128,7 +136,7 @@ public class SignInActivity extends Activity {
     public void errorLogin(){
     	Vibrator vibrator =(Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
 	    vibrator.vibrate(200);
-	    Toast.makeText(getApplicationContext(),"Introduce nombre de usuario y contraseña.", Toast.LENGTH_SHORT).show();   	
+	    Toast.makeText(getApplicationContext(),"Introduce correo electrónico y contraseña.", Toast.LENGTH_SHORT).show();   	
     }
 	
     public boolean loginStatus(String username ,String password ) {
@@ -146,13 +154,20 @@ public class SignInActivity extends Activity {
 					//get the content of each tag
 					logStatus = jsonChildNode.optInt("logStatus");
 					
-					Log.i("ds", "maner "+ logStatus);
-				   
 					if (logStatus == 0){
 		    			 return false;
 		    		}
 		    		else{
-		    			 return true;
+		    			int idUser = jsonChildNode.optInt("id");
+					    String userName = jsonChildNode.optString("nombre");
+					    String address = jsonChildNode.optString("direccion");
+					    int stars = jsonChildNode.optInt("puntos");
+					    int total = jsonChildNode.optInt("total");
+					    String email = jsonChildNode.optString("email");
+					    String telephone = jsonChildNode.optString("telefono");
+					    
+					    element = new ElementList(getResources().getDrawable(R.drawable.person), userName, address, stars, "("+total+")", email, telephone, idUser);
+		    			return true;
 		    		}
 			}catch (JSONException e) {
 				Log.e("#EXCEPTION: loadCategories()", e.getMessage());
@@ -196,10 +211,9 @@ public class SignInActivity extends Activity {
         	loadDialog.dismiss();
         	
         	if (result.equals("ok")){
-        		/*Intent i=new Intent(SignInActivity.this, HiScreen.class);
-				i.putExtra("user",user);
-				startActivity(i); */
-        		Toast.makeText(getApplicationContext(), "Correctos", Toast.LENGTH_LONG).show();
+        		Intent i=new Intent(SignInActivity.this, MyProfileActivity.class);
+				startActivity(i); 
+				finish();
         	}
         	else{
         		Toast.makeText(getApplicationContext(), "Usuario y/o contraseña incorrectos.", Toast.LENGTH_LONG).show();

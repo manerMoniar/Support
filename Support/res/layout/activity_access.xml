@@ -48,6 +48,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="28dp"
         android:background="@color/orange"
+        android:contentDescription="@string/app_name"
         android:padding="15dp"
         android:src="@drawable/tool" />
 

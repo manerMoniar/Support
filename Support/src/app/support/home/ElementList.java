@@ -10,18 +10,22 @@ public class ElementList {
 	int stars;
 	int id;
 	String countStars;
+	String email;
+	String telephone;
 	
 	public ElementList() {
 		super();
 	}
 
-	public ElementList(Drawable icon, String name, String address, int stars, String countStars, int id) {
+	public ElementList(Drawable icon, String name, String address, int stars, String countStars, String email, String telephone, int id) {
 		super();
 		this.icon = icon;
 		this.name = name;
 		this.address = address;
 		this.stars = stars;
 		this.countStars = countStars;
+		this.email = email;
+		this.telephone = telephone;
 		this.id = id;
 	}
 
@@ -72,5 +76,21 @@ public class ElementList {
 	public void setCountStars(String countStars) {
 		this.countStars = countStars;
 	}
-		
+	
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getTelephone() {
+		return telephone;
+	}
+
+	public void setTelephone(String telephone) {
+		this.telephone = telephone;
+	}
 }
