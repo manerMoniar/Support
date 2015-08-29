@@ -98,21 +98,6 @@ CREATE TABLE `usuarios` (
 -- ----------------------------
 -- Records of usuarios
 -- ----------------------------
-INSERT INTO `usuarios` VALUES ('1', 'Roberto Covarrubias Carrillo', '1234', null, null, 'Calle Oro Col. Metales #185 A', '4921587415', 'rcovar00@gmail.com', '');
-INSERT INTO `usuarios` VALUES ('2', 'Alejandro Isaac Díaz Salinas', '1234', null, null, 'CIENCIAS QUIMICAS No. 59 COLONIA SPAUAZ Guadalupe, Zacatecas. CP 98600', '492 152 45 98', 'wolfd1az@gmail.com', '');
-INSERT INTO `usuarios` VALUES ('3', 'Pavel Michael Noriega Delgado', '1234', null, null, 'DOLORES No. 32A COLONIA MIGUEL HIDALGO, Fresnillo, Zacatecas. CP 99034', '492 189 85 47', 'pavka007ae@gmail.com', '');
-INSERT INTO `usuarios` VALUES ('4', 'Dante Alan Cervantes Alfaro', '1234', null, null, 'ANDADOR L3 No. 216 FRACCIONAMIENTO ISSSTE ZAC 1, Zacatecas, Zacatecas. CP 98087', '4921181262', 'etnad_08@hotmail.com', '');
-INSERT INTO `usuarios` VALUES ('5', 'Maner Moniar', '1234', null, null, 'ROJO COL. COLORES #125 GUADALUPE, ZACATECAS CP 98000', '4927574412', 'maner.moniar@gmail.com', '');
-INSERT INTO `usuarios` VALUES ('6', 'Diana Elizabeth Salas Navarro', '1234', null, null, 'DOLORES No. 32A COLONIA MIGUEL HIDALGO, Fresnillo, Zacatecas. CP 99034', '492 785 98 54', 'bella_naory_06@hotmail.com', '');
-INSERT INTO `usuarios` VALUES ('7', 'Haide Eulalia Hernandez Matancillas', '1234', null, null, 'DOLORES No. 32A COLONIA MIGUEL HIDALGO, Fresnillo, Zacatecas. CP 99034', '492 784 56 98', 'ediah_45@hotmail.com', '');
-INSERT INTO `usuarios` VALUES ('8', 'Lilia Marisol Molina Mariscal', '1234', null, null, 'DOLORES No. 32A COLONIA MIGUEL HIDALGO, Fresnillo, Zacatecas. CP 99034', '492 544 78 45', 'lilia-sol06@hotmail.com', '');
-INSERT INTO `usuarios` VALUES ('9', 'Manuel Martin Gonzalez Basurto', '1234', null, null, 'DOLORES No. 32A COLONIA MIGUEL HIDALGO, Fresnillo, Zacatecas. CP 99034', '4921547845', 'timi_bio@hotmail.com', '');
-INSERT INTO `usuarios` VALUES ('10', 'Brandon Eduardo Guerrero Lopez', '1234', null, null, 'DOLORES No. 32A COLONIA MIGUEL HIDALGO, Fresnillo, Zacatecas. CP 99034', '4951234578', '492 123 25 65', '');
-INSERT INTO `usuarios` VALUES ('11', 'Soluciones Ertek', '1234', null, null, 'Calle respuesta, Col Preguntas # 124', '92 1 54 05', 'contacto@ertek.com', '');
-INSERT INTO `usuarios` VALUES ('12', 'Javier Castro Ruelas', '1234', null, null, 'La condesa', '92 5 44 56', 'javier@sfds.com', '');
-INSERT INTO `usuarios` VALUES ('13', 'Gerardo Ambriz Luna', '1234', null, null, 'Calle Azul, Col Colores # 124 Zac.', '98 5 44 22', 'geras@gmailc.om', '');
-INSERT INTO `usuarios` VALUES ('14', 'Perla de la Riva Reyes', '1234', null, null, 'Calle cristales Zac.', '4991254578', 'perlita@mail.com', '');
-INSERT INTO `usuarios` VALUES ('15', 'Manuel Peralta Lechuga', '1234', null, null, '...', '92 1 54 78', 'manuel@yahoo.com.mx', '');
 INSERT INTO `usuarios` VALUES ('19', 'NEfi34,.', 'NEfi34,.', null, null, 'NEfi34,.', 'NEfi34,.', 'pavkai@yahoo.com', '');
 
 -- ----------------------------
